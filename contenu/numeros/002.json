@@ -1,0 +1,257 @@
+{
+  "numero": 2,
+  "slug": "002",
+  "lundi": "2026-10-12",
+  "periode": "8 – 14 octobre 2026",
+  "label": "Semaine du 8 octobre 2026",
+  "titre": "La confiance devient l'argument.",
+  "chapo": [
+    "La semaine dernière, les assistants IA devenaient un canal. Cette semaine, une question s'impose : à qui fait-on confiance dans ce canal ?",
+    "Les utilisateurs acceptent la publicité quand on la leur explique, les médias veulent être cités et rémunérés, et les Français attendent que les entreprises partagent leur expertise. Pendant ce temps, les assistants continuent de monter en puissance."
+  ],
+  "themes": [
+    "IA",
+    "Marketing",
+    "Communication"
+  ],
+  "image": {
+    "src": "assets/img/002-une.jpg",
+    "alt": "Illustration : un homme au chapeau melon, de profil, dont le regard est masqué par un nuage, sur fond rouge",
+    "style": "collage"
+  },
+  "chiffres_cles": [
+    {
+      "chiffre": "47 %",
+      "texte": "des utilisateurs d'IA informés de la pub dans ChatGPT pourraient choisir une marque inconnue recommandée par l'IA (22 % des non-informés)",
+      "source": "Kantar, via CB News, 13 oct.",
+      "url": "https://www.cbnews.fr/etudes/publicite-ia-information-est-cle-acceptation-utilisateurs-kantar"
+    },
+    {
+      "chiffre": "66 %",
+      "texte": "des Français souhaitent que les entreprises prennent la parole sur les grands enjeux du pays et partagent leur expertise",
+      "source": "Ipsos bva, via Stratégies, 8 oct.",
+      "url": "https://www.strategies.fr/actualites/marques/LQ6698762C/souverainete-quel-role-pour-les-entreprises-francaises.html"
+    },
+    {
+      "chiffre": "95 %",
+      "texte": "des community managers en poste utilisent l'IA dans leur travail",
+      "source": "Enquête BDM, 14 oct.",
+      "url": "https://www.blogdumoderateur.com/enquete-community-managers-ia-2026/"
+    },
+    {
+      "chiffre": "−28 %",
+      "texte": "d'embauches en CDI des 21-29 ans dans les métiers les plus exposés à l'IA, par rapport à novembre 2022",
+      "source": "Banque de France, via BDM, 14 oct.",
+      "url": "https://www.blogdumoderateur.com/ia-freine-embauche-jeunes/"
+    }
+  ],
+  "regard": {
+    "texte": "La confiance ne se décrète pas, elle se documente. Les utilisateurs acceptent la publicité quand on la leur explique, les médias exigent d'être cités, les Français attendent que les entreprises partagent leur expertise. Pour une marque B2B, la règle est la même : expliquer comment on travaille, sourcer ce qu'on avance et assumer un point de vue. C'est précisément ce que l'IA ne fera pas à notre place.",
+    "statut": "proposition"
+  },
+  "etapes": [
+    {
+      "id": "assistants",
+      "titre": "Des assistants toujours plus puissants",
+      "faits": [
+        "gpt6",
+        "gemini"
+      ]
+    },
+    {
+      "id": "pub-transparente",
+      "titre": "La pub dans l'IA, acceptée si on l'explique",
+      "faits": [
+        "kantar"
+      ]
+    },
+    {
+      "id": "medias",
+      "titre": "Les médias veulent être cités et rémunérés",
+      "faits": [
+        "spur"
+      ]
+    },
+    {
+      "id": "souverainete",
+      "titre": "Les entreprises attendues sur la souveraineté",
+      "faits": [
+        "ipsos"
+      ]
+    }
+  ],
+  "faits": {
+    "gpt6": {
+      "id": "gpt6",
+      "themes": [
+        "IA"
+      ],
+      "titre": "GPT-6 arrive dans ChatGPT, avec des réponses interactives",
+      "mot": "GPT-6",
+      "resume": "OpenAI ouvre GPT-6 à tous les utilisateurs de ChatGPT, partout dans le monde, avec « Intelligent UI » : le modèle choisit lui-même la forme de sa réponse et peut mêler texte, graphiques, boutons, formulaires ou schémas à manipuler. Les offres Plus, Pro, Business et Enterprise ont accès à GPT-6 Sol, les offres Free et Go à GPT-6 Luna, une version pensée pour les tâches rapides.",
+      "impact": "Un comparatif d'offres ou une simulation de budget peut désormais sortir de ChatGPT sous forme d'outil à manipuler. Vos acheteurs vont s'habituer à ce confort : vos propres contenus (calculateurs, comparatifs, démos) devront être au moins aussi pratiques.",
+      "sources": [
+        [
+          "Blog du Modérateur",
+          "8 oct.",
+          "https://www.blogdumoderateur.com/chatgpt-passe-gpt-6-nouvelle-interface/"
+        ]
+      ],
+      "chiffre": [
+        "44 %",
+        "plus tôt : le début des réponses avec recherche web, selon une mesure interne d'OpenAI"
+      ]
+    },
+    "gemini": {
+      "id": "gemini",
+      "themes": [
+        "IA"
+      ],
+      "titre": "Google ouvre Gemini 4 Argon aux abonnés Pro et Ultra",
+      "mot": "Gemini",
+      "resume": "Gemini 4 Argon, jusqu'ici réservé à des acteurs de la cyberdéfense, s'ouvre aux abonnés Google AI Pro et Ultra (dans l'application Gemini et le mode IA de la recherche), aux entreprises et aux développeurs. Google le présente comme un modèle pour les tâches complexes en plusieurs étapes. En mode agent, il doit demander une confirmation humaine avant toute action irréversible.",
+      "impact": "Les grands assistants se rapprochent en puissance : la différence se jouera sur leur intégration dans vos outils et sur la qualité de vos consignes. Inutile de courir après chaque nouveau modèle, mieux vaut fixer vos usages et vos règles de vérification.",
+      "sources": [
+        [
+          "Blog du Modérateur",
+          "14 oct.",
+          "https://www.blogdumoderateur.com/gemini-4-argon-accessible/"
+        ]
+      ],
+      "chiffre": [
+        "40+",
+        "applications connectables dans l'application Gemini sur Mac, via Antigravity (abonnés Ultra)"
+      ]
+    },
+    "kantar": {
+      "id": "kantar",
+      "themes": [
+        "Marketing"
+      ],
+      "titre": "Pub dans l'IA : les utilisateurs informés l'acceptent bien mieux",
+      "mot": "Kantar",
+      "resume": "Selon le baromètre Kantar (1 010 Français interrogés du 18 au 23 septembre), 23 % des Français ont entendu parler de la publicité dans ChatGPT, et seuls 7 % de ceux qui utilisent ChatGPT à titre privé disent en avoir été informés par OpenAI. L'écart est net : 50 % des non-informés rejettent la publicité quelles que soient les conditions, contre 19 % des informés. Leurs conditions : des réponses non influencées (33 %), la confidentialité des données (30 %), une séparation claire entre pub et réponses (28 %).",
+      "impact": "La transparence n'est pas une contrainte, c'est ce qui rend la publicité acceptable. Et 47 % des utilisateurs informés pourraient choisir une marque inconnue recommandée par l'IA : être cité dans les réponses compte autant que d'y acheter de l'espace.",
+      "sources": [
+        [
+          "CB News",
+          "13 oct.",
+          "https://www.cbnews.fr/etudes/publicite-ia-information-est-cle-acceptation-utilisateurs-kantar"
+        ]
+      ],
+      "chiffre": [
+        "19 %",
+        "des utilisateurs informés rejettent la pub dans l'IA quoi qu'il arrive, contre 50 % des non-informés"
+      ],
+      "note": "Étude grand public, mais le signal vaut aussi pour le B2B."
+    },
+    "spur": {
+      "id": "spur",
+      "themes": [
+        "Communication"
+      ],
+      "titre": "L'AFP et L'Équipe rejoignent la coalition des médias face à l'IA",
+      "mot": "SPUR",
+      "resume": "SPUR (Standards for Publisher Usage Rights) est une coalition lancée en 2026 par cinq médias britanniques, dont la BBC, le Financial Times et The Guardian. Son but : un cadre « responsable et transparent » pour l'utilisation des contenus médias par l'IA. Une quarantaine de nouveaux membres la rejoignent, dont l'AFP, L'Équipe, Locales.tv, le New York Times et The Economist, après Radio France la semaine précédente. « Cette valeur à la source doit être reconnue, citée et rémunérée », résume Fabrice Fries, PDG de l'AFP.",
+      "impact": "Les médias veulent être cités et payés quand l'IA reprend leurs contenus. Pour les relations presse et le contenu de marque, c'est un rappel : ce qui est sourcé, signé et vérifiable garde sa valeur, y compris aux yeux des IA.",
+      "sources": [
+        [
+          "CB News",
+          "13 oct.",
+          "https://www.cbnews.fr/medias/ia-afp-localestv-equipe-quarantaine-nouveaux-adherents-coalition-internationale-spur"
+        ]
+      ],
+      "chiffre": [
+        "80",
+        "acteurs des médias environ dans la coalition SPUR"
+      ]
+    },
+    "ipsos": {
+      "id": "ipsos",
+      "themes": [
+        "Communication"
+      ],
+      "titre": "Les Français attendent la parole des entreprises sur la souveraineté",
+      "mot": "Souveraineté",
+      "resume": "Étude Ipsos bva pour Entreprises & Médias, l'association des directeurs de la communication des grandes entreprises, menée du 2 au 5 septembre auprès de 1 000 personnes : 84 % des Français estiment que les entreprises ont un rôle à jouer en matière de souveraineté, en lien avec l'État, et 76 % jugent le niveau actuel insuffisant. 66 % souhaitent qu'elles prennent la parole sur les grands enjeux du pays et partagent leur expertise, notamment sur la cybersécurité, l'IA et la désinformation.",
+      "impact": "La communication corporate gagne une légitimité nouvelle pour prendre position, à condition de s'appuyer sur une expertise réelle. Pour une entreprise tech ou industrielle, la souveraineté peut devenir un pilier de la plateforme de marque, pas seulement un argument commercial.",
+      "sources": [
+        [
+          "Stratégies",
+          "8 oct.",
+          "https://www.strategies.fr/actualites/marques/LQ6698762C/souverainete-quel-role-pour-les-entreprises-francaises.html"
+        ]
+      ],
+      "chiffre": [
+        "84 %",
+        "des Français estiment que les entreprises ont un rôle à jouer pour la souveraineté"
+      ]
+    }
+  },
+  "metier": [
+    {
+      "theme": "Communication",
+      "chiffre": "95 %",
+      "titre": "Les community managers ont adopté l'IA",
+      "texte": "Selon l'enquête BDM menée avec Iconosquare auprès de 471 community managers en France (juillet-août 2026), 95 % utilisent l'IA dans leur travail, et 75 % de ces utilisateurs tous les jours. Claude progresse fortement : 49 % l'utilisent, contre 9 % en 2025, quand ChatGPT recule de 86 % à 75 %.",
+      "impact": "L'IA est devenue un outil de base du social media. La différence ne se fait plus sur l'usage, mais sur la ligne éditoriale, la relecture et la stratégie, que l'IA n'assure pas seule.",
+      "sources": [
+        [
+          "Blog du Modérateur",
+          "14 oct.",
+          "https://www.blogdumoderateur.com/enquete-community-managers-ia-2026/"
+        ]
+      ]
+    },
+    {
+      "theme": "Marketing",
+      "chiffre": "20+",
+      "titre": "Des études qualitatives sans répondants humains",
+      "texte": "Patrick van Bloeme, cofondateur de l'institut Novatris, lance Limpid : une plateforme d'études qualitatives menées avec des « personas synthétiques », des profils simulés par l'IA. Les entreprises y conduisent elles-mêmes leurs études, du brief aux livrables, en quelques heures, avec plus de vingt types d'études prêts à l'emploi.",
+      "impact": "Tester un message ou une offre devient rapide et peu coûteux. Mais un persona synthétique reste une simulation : utile pour défricher, pas pour remplacer l'écoute de vrais clients avant une décision importante.",
+      "sources": [
+        [
+          "CB News",
+          "13 oct.",
+          "https://www.cbnews.fr/conseil/creation-limpid-plateforme-etudes-qualitatives-repondants-humains"
+        ]
+      ]
+    },
+    {
+      "theme": "Communication",
+      "chiffre": "18",
+      "titre": "Inherent réunit 18 acquisitions sous une seule marque",
+      "texte": "Inherent, groupe français de services numériques (communication, cloud, cybersécurité), réunit toutes ses activités sous une marque commune, conçue par l'agence indépendante Insign au terme de trois ans de travail. Le groupe, qui a mené 18 acquisitions en six ans, compte environ 1 600 collaborateurs.",
+      "impact": "Un cas typique de groupe B2B construit par rachats, qui doit unifier sa marque pour être lisible auprès des clients comme des candidats. Et un rappel : une architecture de marque se construit en années, pas en semaines.",
+      "sources": [
+        [
+          "Stratégies",
+          "8 oct.",
+          "https://www.strategies.fr/actualites/marques/LQ6717577C/le-groupe-inherent-reunit-ses-activites-sous-une-marque-commune-concue-par-insign.html"
+        ]
+      ]
+    }
+  ],
+  "contexte": [
+    {
+      "titre": "L'IA freine déjà l'embauche des jeunes",
+      "texte": "Selon un document de travail de la Banque de France, les embauches en CDI des 21-29 ans dans les métiers les plus exposés à l'IA sont environ 28 % sous leur niveau de novembre 2022, contre 8 % dans les moins exposés. Les auteurs constatent une association, sans isoler l'effet propre de l'IA.",
+      "source": "Banque de France, via BDM, 14 oct.",
+      "url": "https://www.blogdumoderateur.com/ia-freine-embauche-jeunes/"
+    },
+    {
+      "titre": "Les réponses IA de Google, déjà une habitude",
+      "texte": "58 % des Français utilisent déjà les aperçus IA de Google, et 24 % ont essayé son mode conversationnel, selon le même baromètre Kantar. La recherche par IA n'est plus une curiosité, c'est un usage courant.",
+      "source": "Kantar, via CB News, 13 oct.",
+      "url": "https://www.cbnews.fr/etudes/publicite-ia-information-est-cle-acceptation-utilisateurs-kantar"
+    }
+  ],
+  "tendance": "La confiance devient la condition d'accès aux assistants IA. Sans transparence, la publicité est rejetée ; sans reconnaissance, les médias se ferment ; sans expertise visible, une marque n'est ni citée ni crue. Pour le marketing B2B, l'effort se déplace de la production de contenus vers la preuve.",
+  "aussi": [
+    {
+      "texte": "Meta Muse Wonder : Meta lance son premier modèle « frontière », pour des tâches d'agent personnelles et professionnelles. L'agent Muse n'est proposé ni en France ni dans l'UE, sans date annoncée.",
+      "source": "Blog du Modérateur",
+      "url": "https://www.blogdumoderateur.com/muse-wonder-meta-entre-dans-course-modeles-ia-pointe/"
+    }
+  ]
+}

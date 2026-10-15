@@ -131,7 +131,7 @@ def page_numero(n, prec, suiv, base):
   <h1>{e(n["titre"])}</h1>
   <div class="une-grille"><div class="chapo">{"".join(f"<p>{e(x)}</p>" for x in n["chapo"])}</div>{photo(base, n.get("image"), "hero")}</div>
 </div></div>
-<div class="wrap"><div class="max"><nav class="sommaire" aria-labelledby="t-som"><h2 id="t-som">Au sommaire : le fil de la semaine en {len(n["etapes"])} parties, puis le métier, le contexte et mon regard</h2><ol>{sommaire}</ol></nav></div></div>
+<div class="wrap"><div class="max"><nav class="sommaire" aria-labelledby="t-som"><h2 id="t-som">Au sommaire</h2><ol>{sommaire}</ol></nav></div></div>
 <section class="chiffres wrap" aria-labelledby="t-k" style="margin-top:clamp(48px,7vw,88px)"><div class="max"><h2 id="t-k">Les chiffres à retenir</h2><div class="kgrid">{cles}</div></div></section>
 {"".join(et)}
 {metier}{ctx}{tend}{regard}{aussi}

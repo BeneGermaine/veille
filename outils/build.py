@@ -92,7 +92,7 @@ def page_numero(n, prec, suiv, base):
         if x.get("encart"):
             enc = f'<aside class="encart"><h4>{e(x["encart"]["titre"])}</h4><p>{e(x["encart"]["texte"])}</p></aside>'
         et.append(f'''<section class="etape wrap" id="{x["id"]}" aria-labelledby="h-{x["id"]}"><div class="max">
-  <div class="etape-tete"><span class="rang" aria-hidden="true">{i + 1:02d}</span><div><p class="kicker">Partie {i + 1} sur {len(n["etapes"])}</p><h2 id="h-{x["id"]}">{e(x["titre"])}</h2></div></div>
+  <div class="etape-tete"><span class="rang" aria-hidden="true">{i + 1:02d}</span><div><p class="kicker">Le fil de la semaine</p><h2 id="h-{x["id"]}">{e(x["titre"])}</h2></div></div>
   {photo(base, x.get("image"))}{faits}{enc}</div>
 </section>''')
     entrees = [(x["id"], f"{i + 1:02d}", x["titre"]) for i, x in enumerate(n["etapes"])]

@@ -11,6 +11,8 @@ import json, html, pathlib, sys, datetime, unicodedata
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://benegermaine.github.io/veille/"
 AUTEUR = "Bénédicte Lallement"
+# Avant le lancement officiel : on demande aux moteurs de recherche de ne pas indexer le site. Mettre "" le jour du lancement.
+ROBOTS = '<meta name="robots" content="noindex, nofollow">'
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">'
 LIRE_ETUDE = "Lire l'étude"
 # apparition douce des blocs au défilement (désactivée si l'utilisateur limite les animations)
@@ -46,7 +48,7 @@ def cle_theme(t):
 def tete(titre, description, chemin, image=None, base=""):
     og = f'<meta property="og:image" content="{SITE}{image}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="627"><meta name="twitter:card" content="summary_large_image">' if image else ""
     return f'''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(titre)}</title><meta name="description" content="{e(description)}"><meta name="author" content="{AUTEUR}">
+<title>{e(titre)}</title><meta name="description" content="{e(description)}"><meta name="author" content="{AUTEUR}">{ROBOTS}
 <link rel="canonical" href="{SITE}{chemin}">
 <meta property="og:type" content="article"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="La veille de {AUTEUR}">
 <meta property="og:title" content="{e(titre)}"><meta property="og:description" content="{e(description)}"><meta property="og:url" content="{SITE}{chemin}">{og}

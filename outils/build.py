@@ -189,7 +189,7 @@ document.querySelectorAll("#liste li").forEach(li=>{{li.hidden=!!b.dataset.t&&!l
     lb_meta = RACINE / "contenu" / "livre-blanc.json"
     lb = json.loads(lb_meta.read_text()) if lb_meta.exists() else {}
     dispo = bool(lb.get("pdf"))
-    bouton = f'<a class="btn" href="{e(lb["pdf"])}">Télécharger le livre blanc (PDF)</a>' if dispo else '<span class="btn" aria-disabled="true">Bientôt disponible</span>'
+    bouton = f'<a class="btn" href="{e(lb["pdf"])}" target="_blank" rel="noopener">Télécharger le livre blanc (PDF) <span aria-hidden="true">↗</span></a>' if dispo else '<span class="btn" aria-disabled="true">Bientôt disponible</span>'
     couv_img = lb.get("couverture")
     a_photo = bool(couv_img) and (RACINE / couv_img).exists()
     couv = (f'<div class="couv" aria-hidden="true">' + (f'<img src="{e(couv_img)}" alt="">' if a_photo else "") +

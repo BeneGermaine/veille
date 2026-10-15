@@ -50,27 +50,34 @@
     {
       "id": "espace-pub",
       "titre": "Un nouvel espace publicitaire",
-      "illustration": "pub",
       "faits": [
         "pubs"
-      ]
+      ],
+      "image": {
+        "src": "assets/img/001-pub.jpg",
+        "alt": "Une main tient un smartphone affichant une conversation avec un assistant IA et une vignette sponsorisée",
+        "legende": "Image générée avec l'IA de Canva"
+      }
     },
     {
       "id": "visibilite",
       "titre": "Une visibilité qui devient mesurable",
-      "illustration": "mesure",
       "faits": [
         "mesure"
       ],
       "encart": {
         "titre": "Le saviez-vous ? AEO ou GEO",
         "texte": "L'AEO (Answer Engine Optimization) consiste à rédiger ses contenus pour être LA réponse à une question précise. Le GEO (Generative Engine Optimization) vise à être cité ou recommandé dans les réponses rédigées par une IA générative. Les deux se recoupent largement : l'un répond à la question, l'autre fait entrer la marque dans la réponse."
+      },
+      "image": {
+        "src": "assets/img/001-mesure.jpg",
+        "alt": "Une analyste devant un écran affichant des graphiques d'audience",
+        "legende": "Image générée avec l'IA de Canva"
       }
     },
     {
       "id": "tracabilite",
       "titre": "Des contenus désormais traçables",
-      "illustration": "trace",
       "faits": [
         "filigrane"
       ],
@@ -82,7 +89,6 @@
     {
       "id": "poste-de-travail",
       "titre": "Un poste de travail augmenté",
-      "illustration": "outil",
       "faits": [
         "workspace",
         "adobe"
@@ -230,7 +236,6 @@
       "theme": "Marketing",
       "chiffre": "+11,9 %",
       "titre": "Le marché publicitaire mondial accélère en 2026",
-      "illustration": "marche",
       "texte": "WARC prévoit 1 340 milliards de dollars de dépenses publicitaires en 2026. Réseaux sociaux (+21,3 %), search et retail media pèsent à eux trois 66,4 % du total, et Alphabet, Amazon et Meta en captent près de 60 % hors Chine.",
       "impact": "Les budgets se concentrent sur quelques plateformes. Pour une marque B2B, c'est un argument pour renforcer ses canaux propres (site, contenus, newsletter) plutôt que de tout louer.",
       "sources": [
@@ -245,7 +250,6 @@
       "theme": "Communication",
       "chiffre": "–20 %",
       "titre": "Les sites d'information perdent un cinquième de leurs visites en un an",
-      "illustration": "media",
       "texte": "Selon l'ACPM, les grandes marques d'information ont perdu environ 20 % de visites entre septembre 2025 et septembre 2026 (Le Parisien –40,9 %, franceinfo –29,1 %). CB News y voit en partie l'effet des réponses IA de Google, arrivées en France fin juillet.",
       "impact": "Les relations presse et le contenu de marque ne peuvent plus compter seulement sur le trafic des médias. C'est le même fil que cette semaine : les réponses IA captent l'attention.",
       "sources": [
@@ -283,5 +287,10 @@
       "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/"
     }
   ],
-  "tendance": "Les assistants IA deviennent un canal à part entière, avec ses règles : on y fait de la pub, on y mesure sa visibilité, et les contenus qui en sortent sont marqués. Pour le marketing, l'IA n'est plus seulement un outil de production, c'est aussi un endroit où la marque doit être présente et mesurable."
+  "tendance": "Les assistants IA deviennent un canal à part entière, avec ses règles : on y fait de la pub, on y mesure sa visibilité, et les contenus qui en sortent sont marqués. Pour le marketing, l'IA n'est plus seulement un outil de production, c'est aussi un endroit où la marque doit être présente et mesurable.",
+  "image": {
+    "src": "assets/img/001-une.jpg",
+    "alt": "Une professionnelle de dos, devant un ordinateur portable affichant un assistant IA, dans un bureau lumineux",
+    "legende": "Image générée avec l'IA de Canva"
+  }
 }

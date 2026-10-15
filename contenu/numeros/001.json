@@ -88,9 +88,8 @@
       },
       "image": {
         "src": "assets/img/001-trace.jpg",
-        "alt": "Portrait de profil d'un homme au chapeau melon dont le regard est masqué par un nuage",
-        "style": "photo",
-        "accent": "vert"
+        "alt": "Collage : deux mains tiennent un casque audio autour d'une bouche ouverte d'où s'échappent des lettres et des guillemets",
+        "style": "collage"
       }
     },
     {

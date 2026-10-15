@@ -220,3 +220,8 @@ img{max-width:100%;display:block}
 .mgrid article:nth-child(even),.cgrid article:nth-child(even){border-top:3px solid var(--vert)}
 .aussi li{border-left:3px solid transparent;padding-left:14px;transition:border-color .3s}
 .aussi li:hover{border-left-color:var(--vert)}
+
+/* bouton pour remonter en haut */
+.haut-page{position:fixed;right:clamp(16px,3vw,32px);bottom:clamp(16px,3vw,32px);z-index:11;width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--noir);color:#fff;text-decoration:none;font-size:22px;font-weight:700;box-shadow:0 12px 28px -12px rgba(17,17,17,.55);opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .3s,transform .3s,background .25s}
+.haut-page.visible{opacity:1;transform:none;pointer-events:auto}
+.haut-page:hover{background:var(--rouge)}

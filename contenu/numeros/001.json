@@ -55,8 +55,8 @@
       ],
       "image": {
         "src": "assets/img/001-pub.jpg",
-        "alt": "Une main tient un smartphone affichant une conversation avec un assistant IA et une vignette sponsorisée",
-        "legende": "Image générée avec l'IA de Canva"
+        "alt": "Une main tient un smartphone d'où s'échappent des icônes de likes, de messages et de profils",
+        "style": "photo"
       }
     },
     {
@@ -71,8 +71,8 @@
       },
       "image": {
         "src": "assets/img/001-mesure.jpg",
-        "alt": "Une analyste devant un écran affichant des graphiques d'audience",
-        "legende": "Image générée avec l'IA de Canva"
+        "alt": "Collage : mains sur un ordinateur portable, sous une bulle affichant cinq étoiles",
+        "style": "collage"
       }
     },
     {
@@ -92,7 +92,13 @@
       "faits": [
         "workspace",
         "adobe"
-      ]
+      ],
+      "image": {
+        "src": "assets/img/001-poste.jpg",
+        "alt": "Une équipe travaille autour d'une table en bois, ordinateurs portables et tablette ouverts",
+        "style": "photo",
+        "accent": "vert"
+      }
     }
   ],
   "faits": {
@@ -290,7 +296,7 @@
   "tendance": "Les assistants IA deviennent un canal à part entière, avec ses règles : on y fait de la pub, on y mesure sa visibilité, et les contenus qui en sortent sont marqués. Pour le marketing, l'IA n'est plus seulement un outil de production, c'est aussi un endroit où la marque doit être présente et mesurable.",
   "image": {
     "src": "assets/img/001-une.jpg",
-    "alt": "Une professionnelle de dos, devant un ordinateur portable affichant un assistant IA, dans un bureau lumineux",
-    "legende": "Image générée avec l'IA de Canva"
+    "alt": "Collage : bouches qui parlent et bulles de dialogue sur fond violet et jaune",
+    "style": "collage"
   }
 }

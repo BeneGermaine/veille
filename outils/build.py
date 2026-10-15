@@ -13,6 +13,10 @@ SITE = "https://benegermaine.github.io/veille/"
 AUTEUR = "Bénédicte Lallement"
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">'
 LIRE_ETUDE = "Lire l'étude"
+# apparition douce des blocs au défilement (désactivée si l'utilisateur limite les animations)
+APPARITION = """<script>(function(){var d=document.documentElement;if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("anim");
+var o=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vu");o.unobserve(x.target);}});},{rootMargin:"0px 0px -8% 0px"});
+document.querySelectorAll(".reveal,.fait,.k,.mgrid article,.cgrid article,.regard blockquote").forEach(function(el){el.classList.add("reveal");o.observe(el);});})();</script>"""
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 
 e = lambda s: html.escape(str(s), quote=True)
@@ -38,15 +42,19 @@ def barre(base, actif):
 
 
 def pied(base):
-    return f'''<footer class="pied wrap"><div class="max"><p>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée.</p></div></footer></body></html>'''
+    return f'''<footer class="pied wrap"><div class="max"><p>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée.</p></div></footer>{APPARITION}</body></html>'''
 
 
 def photo(base, img, cls="photo"):
-    """Insère une image seulement si le fichier existe dans le dépôt (sinon rien)."""
+    """Insère une image seulement si le fichier existe dans le dépôt (sinon rien).
+    style "photo" : passée en noir et blanc avec un aplat de couleur décalé (effet collage), la couleur revient au survol.
+    style "collage" : image déjà colorée, affichée telle quelle."""
     if not img or not (RACINE / img["src"]).exists():
         return ""
     cap = f'<figcaption>{e(img["legende"])}</figcaption>' if img.get("legende") else ""
-    return f'<figure class="{cls}"><img src="{base}{e(img["src"])}" alt="{e(img.get("alt", ""))}" loading="lazy">{cap}</figure>'
+    style = "nb" if img.get("style", "photo") == "photo" else "collage"
+    acc = " acc-vert" if img.get("accent") == "vert" else ""
+    return f'<figure class="{cls} {style}{acc} reveal"><img src="{base}{e(img["src"])}" alt="{e(img.get("alt", ""))}" loading="lazy">{cap}</figure>'
 
 
 def lien_out(url, label, petit=""):
@@ -109,9 +117,8 @@ def page_numero(n, prec, suiv, base):
     return f'''<div class="une wrap"><div class="max">
   <div class="meta"><span class="num">N° {n["numero"]}</span><span>{e(n["label"])}</span><span>IA · Marketing · Communication · Design</span></div>
   <h1>{e(n["titre"])}</h1>
-  <div class="chapo">{"".join(f"<p>{e(x)}</p>" for x in n["chapo"])}</div>
+  <div class="une-grille"><div class="chapo">{"".join(f"<p>{e(x)}</p>" for x in n["chapo"])}</div>{photo(base, n.get("image"), "hero")}</div>
 </div></div>
-{('<div class="wrap"><div class="max">' + photo(base, n.get("image"), "hero") + '</div></div>') if photo(base, n.get("image"), "hero") else ""}
 <div class="wrap"><div class="max"><nav class="sommaire" aria-labelledby="t-som"><h2 id="t-som">Le fil de la semaine, en {len(n["etapes"])} temps</h2><ol>{sommaire}</ol></nav></div></div>
 <section class="chiffres wrap" aria-labelledby="t-k" style="margin-top:clamp(48px,7vw,88px)"><div class="max"><h2 id="t-k">Les chiffres à retenir</h2><div class="kgrid">{cles}</div></div></section>
 {regard}

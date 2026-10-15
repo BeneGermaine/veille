@@ -16,7 +16,12 @@ LIRE_ETUDE = "Lire l'étude"
 # apparition douce des blocs au défilement (désactivée si l'utilisateur limite les animations)
 APPARITION = """<script>(function(){var d=document.documentElement;if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("anim");
 var o=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vu");o.unobserve(x.target);}});},{rootMargin:"0px 0px -8% 0px"});
-document.querySelectorAll(".reveal,.fait,.k,.mgrid article,.cgrid article,.regard blockquote").forEach(function(el){el.classList.add("reveal");o.observe(el);});})();</script>"""
+document.querySelectorAll(".reveal,.fait,.k,.mgrid article,.cgrid article,.regard blockquote").forEach(function(el){el.classList.add("reveal");o.observe(el);});})();
+(function(){var bar=document.querySelector(".collant"),som=document.querySelector(".sommaire");if(!bar||!som||!("IntersectionObserver" in window))return;bar.hidden=false;
+new IntersectionObserver(function(es){bar.classList.toggle("visible",es[0].boundingClientRect.top<0&&!es[0].isIntersecting);}).observe(som);
+var liens={};bar.querySelectorAll("a").forEach(function(a){liens[a.dataset.cible]=a;});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){bar.querySelectorAll("a").forEach(function(a){a.removeAttribute("aria-current");});liens[x.target.id].setAttribute("aria-current","true");}});},{rootMargin:"-45% 0px -50% 0px"});
+Object.keys(liens).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});})();</script>"""
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 
 e = lambda s: html.escape(str(s), quote=True)
@@ -69,7 +74,7 @@ def bloc_fait(f):
     return f'''<article class="fait">
   <div><div class="tags">{"".join(f'<span class="tag">{e(t)}</span>' for t in f["themes"])}{note}</div>
     <h3>{e(f["titre"])}</h3><p>{e(f["resume"])}</p><div class="out">{sources}</div></div>
-  <div><div class="fig"><strong>{e(c[0])}</strong><span>{e(c[1])}</span></div>
+  <div><div class="fig"><small>Le chiffre</small><strong>{e(c[0])}</strong><span>{e(c[1])}</span></div>
   <div class="chg"><h4>Ce que ça change pour une équipe marketing B2B</h4><p>{e(f["impact"])}</p></div></div>
 </article>'''
 
@@ -87,25 +92,30 @@ def page_numero(n, prec, suiv, base):
         if x.get("encart"):
             enc = f'<aside class="encart"><h4>{e(x["encart"]["titre"])}</h4><p>{e(x["encart"]["texte"])}</p></aside>'
         et.append(f'''<section class="etape wrap" id="{x["id"]}" aria-labelledby="h-{x["id"]}"><div class="max">
-  <div class="etape-tete"><div><p class="kicker">{i + 1:02d} · Le fil de la semaine</p><h2 id="h-{x["id"]}">{e(x["titre"])}</h2></div></div>
+  <div class="etape-tete"><span class="rang" aria-hidden="true">{i + 1:02d}</span><div><p class="kicker">Partie {i + 1} sur {len(n["etapes"])}</p><h2 id="h-{x["id"]}">{e(x["titre"])}</h2></div></div>
   {photo(base, x.get("image"))}{faits}{enc}</div>
 </section>''')
-    sommaire = "".join(f'<li><a href="#{x["id"]}"><b>{i + 1:02d}</b><span>{e(x["titre"])}</span></a></li>' for i, x in enumerate(n["etapes"]))
+    entrees = [(x["id"], f"{i + 1:02d}", x["titre"]) for i, x in enumerate(n["etapes"])]
+    if n.get("metier"): entrees.append(("metier", "+", "Le métier, au-delà de l'IA"))
+    if n.get("contexte"): entrees.append(("contexte", "+", "Le contexte"))
+    if (n.get("regard") or {}).get("texte"): entrees.append(("regard", "+", "Mon regard"))
+    sommaire = "".join(f'<li><a href="#{a}"><b>{b}</b><span>{e(c)}</span><i aria-hidden="true">↓</i></a></li>' for a, b, c in entrees)
+    collant = "".join(f'<a href="#{a}" data-cible="{a}">{b if b != "+" else e(c.split(",")[0])}</a>' for a, b, c in entrees)
     cles = "".join(f'<div class="k"><strong>{e(k["chiffre"])}</strong><p>{e(k["texte"])}</p><a href="{e(k["url"])}" target="_blank" rel="noopener">{e(k["source"])} ↗</a></div>' for k in n["chiffres_cles"])
     reg = n.get("regard") or {}
     regard = ""
     if reg.get("texte"):
         tag = '<span class="brouillon">Proposition de texte, à réécrire par Bénédicte</span>' if reg.get("statut") == "proposition" else ""
-        regard = f'<section class="regard wrap" aria-labelledby="t-reg"><div class="etroit"><p class="kicker" id="t-reg">Mon regard</p><blockquote><p>{e(reg["texte"])}</p><footer>{AUTEUR}</footer></blockquote>{tag}</div></section>'
+        regard = f'<section class="regard wrap" id="regard" aria-labelledby="t-reg"><div class="etroit"><p class="kicker" id="t-reg">Mon regard</p><blockquote><p>{e(reg["texte"])}</p><footer>{AUTEUR}</footer></blockquote>{tag}</div></section>'
     metier = ""
     if n.get("metier"):
         cartes = "".join(f'''<article><div class="tags"><span class="tag">{e(m["theme"])}</span></div><strong class="n">{e(m["chiffre"])}</strong>
 <h3>{e(m["titre"])}</h3><p>{e(m["texte"])}</p><div class="chg"><h4>Ce que ça change</h4><p>{e(m["impact"])}</p></div>
 <div class="out">{"".join(lien_out(s[2], "Lire l'article complet", s[0] + ", " + s[1]) for s in m["sources"])}</div></article>''' for m in n["metier"])
-        metier = f'<section class="section wrap" aria-labelledby="t-met"><div class="max"><p class="kicker">Au-delà de l\'IA</p><h2 id="t-met">Le métier</h2><p class="lede">Marketing, communication, design : ce qui bouge dans nos métiers, IA ou pas.</p><div class="mgrid">{cartes}</div></div></section>'
+        metier = f'<section class="section wrap" id="metier" aria-labelledby="t-met"><div class="max"><p class="kicker">Au-delà de l\'IA</p><h2 id="t-met">Le métier</h2><p class="lede">Marketing, communication, design : ce qui bouge dans nos métiers, IA ou pas.</p><div class="mgrid">{cartes}</div></div></section>'
     ctx = ""
     if n.get("contexte"):
-        ctx = '<section class="section wrap" aria-labelledby="t-ctx"><div class="max"><p class="kicker">Pour prendre du recul</p><h2 id="t-ctx">Le contexte</h2><p class="lede">Ce qui éclaire la semaine, au-delà de ses sept jours.</p><div class="cgrid">' + "".join(
+        ctx = '<section class="section wrap" id="contexte" aria-labelledby="t-ctx"><div class="max"><p class="kicker">Pour prendre du recul</p><h2 id="t-ctx">Le contexte</h2><p class="lede">Ce qui éclaire la semaine, au-delà de ses sept jours.</p><div class="cgrid">' + "".join(
             f'<article><h3>{e(c["titre"])}</h3><p>{e(c["texte"])}</p><div class="out">{lien_out(c["url"], LIRE_ETUDE, c["source"])}</div></article>' for c in n["contexte"]) + "</div></div></section>"
     tend = f'<section class="tendance wrap"><div class="max"><p class="kicker">La tendance de fond</p><p>{e(n["tendance"])}</p></div></section>' if n.get("tendance") else ""
     aussi = ""
@@ -114,16 +124,17 @@ def page_numero(n, prec, suiv, base):
             f'<li>{e(a["texte"])} <a href="{e(a["url"])}" target="_blank" rel="noopener">Lire sur {e(a["source"])} ↗</a></li>' for a in n["aussi"]) + "</ul></div></section>"
     p = f'<a href="{base}numeros/{prec["slug"]}.html">← N° {prec["numero"]} · {e(prec["label"])}</a>' if prec else '<span class="vide">Premier numéro</span>'
     s = f'<a href="{base}numeros/{suiv["slug"]}.html">N° {suiv["numero"]} · {e(suiv["label"])} →</a>' if suiv else f'<a href="{base}archives.html">Tous les numéros →</a>'
-    return f'''<div class="une wrap"><div class="max">
-  <div class="meta"><span class="num">N° {n["numero"]}</span><span>{e(n["label"])}</span><span>IA · Marketing · Communication · Design</span></div>
+    return f'''<div class="bienvenue wrap"><div class="max"><p><strong>Bienvenue dans la veille de {AUTEUR}.</strong> Chaque lundi, ce qui a bougé dans l'IA, le marketing, la communication et le design B2B : quelques faits datés et sourcés, et ce qu'ils changent concrètement pour une équipe marketing. <a href="{base}archives.html">Voir tous les numéros</a></p></div></div>
+<nav class="collant" aria-label="Parties de ce numéro" hidden><div class="max">{collant}</div></nav>
+<div class="une wrap"><div class="max">
+  <div class="meta"><span class="num">N° {n["numero"]}</span><span>{e(n["label"])}</span></div>
   <h1>{e(n["titre"])}</h1>
   <div class="une-grille"><div class="chapo">{"".join(f"<p>{e(x)}</p>" for x in n["chapo"])}</div>{photo(base, n.get("image"), "hero")}</div>
 </div></div>
-<div class="wrap"><div class="max"><nav class="sommaire" aria-labelledby="t-som"><h2 id="t-som">Le fil de la semaine, en {len(n["etapes"])} temps</h2><ol>{sommaire}</ol></nav></div></div>
+<div class="wrap"><div class="max"><nav class="sommaire" aria-labelledby="t-som"><h2 id="t-som">Au sommaire : le fil de la semaine en {len(n["etapes"])} parties, puis le métier, le contexte et mon regard</h2><ol>{sommaire}</ol></nav></div></div>
 <section class="chiffres wrap" aria-labelledby="t-k" style="margin-top:clamp(48px,7vw,88px)"><div class="max"><h2 id="t-k">Les chiffres à retenir</h2><div class="kgrid">{cles}</div></div></section>
-{regard}
 {"".join(et)}
-{metier}{ctx}{tend}{aussi}
+{metier}{ctx}{tend}{regard}{aussi}
 <nav class="pager wrap" aria-label="Numéros"><div class="max">{p}{s}</div></nav>'''
 
 

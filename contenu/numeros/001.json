@@ -56,7 +56,8 @@
       "image": {
         "src": "assets/img/001-pub.jpg",
         "alt": "Une main tient un smartphone d'où s'échappent des icônes de likes, de messages et de profils",
-        "style": "photo"
+        "style": "photo",
+        "accent": "vert"
       }
     },
     {
@@ -84,6 +85,12 @@
       "encart": {
         "titre": "Le saviez-vous ? L'AI Act",
         "texte": "Le règlement européen sur l'IA s'applique par étapes. Depuis le 2 août 2026, un chatbot doit dire qu'il est une IA, un deepfake doit être signalé, et un texte d'intérêt public généré par IA aussi, sauf s'il a été relu et assumé par une personne. Il n'y a pas d'obligation d'étiqueter tout contenu fait avec l'IA."
+      },
+      "image": {
+        "src": "assets/img/001-trace.jpg",
+        "alt": "Portrait de profil d'un homme au chapeau melon dont le regard est masqué par un nuage",
+        "style": "photo",
+        "accent": "vert"
       }
     },
     {

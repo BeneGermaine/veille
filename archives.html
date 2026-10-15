@@ -13,4 +13,9 @@ document.querySelectorAll(".filtres button").forEach(x=>x.setAttribute("aria-pre
 document.querySelectorAll("#liste li").forEach(li=>{li.hidden=!!b.dataset.t&&!li.dataset.themes.split(",").includes(b.dataset.t);});});
 </script><footer class="pied wrap"><div class="max"><p>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par Bénédicte Lallement. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée.</p></div></footer><script>(function(){var d=document.documentElement;if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("anim");
 var o=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vu");o.unobserve(x.target);}});},{rootMargin:"0px 0px -8% 0px"});
-document.querySelectorAll(".reveal,.fait,.k,.mgrid article,.cgrid article,.regard blockquote").forEach(function(el){el.classList.add("reveal");o.observe(el);});})();</script></body></html>
+document.querySelectorAll(".reveal,.fait,.k,.mgrid article,.cgrid article,.regard blockquote").forEach(function(el){el.classList.add("reveal");o.observe(el);});})();
+(function(){var bar=document.querySelector(".collant"),som=document.querySelector(".sommaire");if(!bar||!som||!("IntersectionObserver" in window))return;bar.hidden=false;
+new IntersectionObserver(function(es){bar.classList.toggle("visible",es[0].boundingClientRect.top<0&&!es[0].isIntersecting);}).observe(som);
+var liens={};bar.querySelectorAll("a").forEach(function(a){liens[a.dataset.cible]=a;});
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){bar.querySelectorAll("a").forEach(function(a){a.removeAttribute("aria-current");});liens[x.target.id].setAttribute("aria-current","true");}});},{rootMargin:"-45% 0px -50% 0px"});
+Object.keys(liens).forEach(function(id){var el=document.getElementById(id);if(el)io.observe(el);});})();</script></body></html>

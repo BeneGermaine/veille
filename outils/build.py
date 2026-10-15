@@ -6,7 +6,7 @@ Usage : python3 outils/build.py            (génère les pages HTML)
 Entrée : contenu/numeros/NNN.json (un fichier par numéro)
 Sortie : index.html (dernier numéro), numeros/NNN.html, archives.html, livre-blanc.html, assets/og/NNN.png
 """
-import json, html, pathlib, sys, datetime
+import json, html, pathlib, sys, datetime, unicodedata
 
 RACINE = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://benegermaine.github.io/veille/"
@@ -25,6 +25,11 @@ Object.keys(liens).forEach(function(id){var el=document.getElementById(id);if(el
 MOIS = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
 
 e = lambda s: html.escape(str(s), quote=True)
+
+
+def cle_theme(t):
+    """« Communication » -> « communication », pour colorer l'étiquette du thème."""
+    return "".join(c for c in unicodedata.normalize("NFD", t.lower()) if c.isalnum() and not unicodedata.combining(c))
 
 
 # ---------- morceaux de page ----------
@@ -72,7 +77,7 @@ def bloc_fait(f):
     note = f'<span class="tag b2c">{e(f["note"])}</span>' if f.get("note") else ""
     sources = "".join(lien_out(s[2], "Lire l'article complet", s[0] + (", " + s[1] if s[1] else "")) for s in f["sources"])
     return f'''<article class="fait">
-  <div><div class="tags">{"".join(f'<span class="tag">{e(t)}</span>' for t in f["themes"])}{note}</div>
+  <div><div class="tags">{"".join(f'<span class="tag t-{cle_theme(t)}">{e(t)}</span>' for t in f["themes"])}{note}</div>
     <h3>{e(f["titre"])}</h3><p>{e(f["resume"])}</p><div class="out">{sources}</div></div>
   <div><div class="fig"><small>Le chiffre</small><strong>{e(c[0])}</strong><span>{e(c[1])}</span></div>
   <div class="chg"><h4>Ce que ça change pour une équipe marketing B2B</h4><p>{e(f["impact"])}</p></div></div>
@@ -91,7 +96,7 @@ def page_numero(n, prec, suiv, base):
         enc = ""
         if x.get("encart"):
             enc = f'<aside class="encart"><h4>{e(x["encart"]["titre"])}</h4><p>{e(x["encart"]["texte"])}</p></aside>'
-        et.append(f'''<section class="etape wrap" id="{x["id"]}" aria-labelledby="h-{x["id"]}"><div class="max">
+        et.append(f'''<section class="etape wrap {("ton-rouge", "ton-vert")[i % 2]}" id="{x["id"]}" aria-labelledby="h-{x["id"]}"><div class="max">
   <div class="etape-tete"><span class="rang" aria-hidden="true">{i + 1:02d}</span><div><p class="kicker">Le fil de la semaine</p><h2 id="h-{x["id"]}">{e(x["titre"])}</h2></div></div>
   {photo(base, x.get("image"))}{faits}{enc}</div>
 </section>''')
@@ -109,7 +114,7 @@ def page_numero(n, prec, suiv, base):
         regard = f'<section class="regard wrap" id="regard" aria-labelledby="t-reg"><div class="etroit"><p class="kicker" id="t-reg">Mon regard</p><blockquote><p>{e(reg["texte"])}</p><footer>{AUTEUR}</footer></blockquote>{tag}</div></section>'
     metier = ""
     if n.get("metier"):
-        cartes = "".join(f'''<article><div class="tags"><span class="tag">{e(m["theme"])}</span></div><strong class="n">{e(m["chiffre"])}</strong>
+        cartes = "".join(f'''<article><div class="tags"><span class="tag t-{cle_theme(m["theme"])}">{e(m["theme"])}</span></div><strong class="n">{e(m["chiffre"])}</strong>
 <h3>{e(m["titre"])}</h3><p>{e(m["texte"])}</p><div class="chg"><h4>Ce que ça change</h4><p>{e(m["impact"])}</p></div>
 <div class="out">{"".join(lien_out(s[2], "Lire l'article complet", s[0] + ", " + s[1]) for s in m["sources"])}</div></article>''' for m in n["metier"])
         metier = f'<section class="section wrap" id="metier" aria-labelledby="t-met"><div class="max"><p class="kicker">Au-delà de l\'IA</p><h2 id="t-met">Le métier</h2><p class="lede">Marketing, communication, design : ce qui bouge dans nos métiers, IA ou pas.</p><div class="mgrid">{cartes}</div></div></section>'

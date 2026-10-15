@@ -197,3 +197,26 @@ img{max-width:100%;display:block}
 .collant a:hover{color:var(--noir)}
 .collant a[aria-current="true"]{background:var(--noir);color:#fff}
 .etape,.section,.regard{scroll-margin-top:64px}
+
+/* nuances de couleur, en touches légères : chaque partie alterne rouge et vert */
+.ton-rouge{--acc:var(--rouge);--acc-doux:#fdecee}
+.ton-vert{--acc:#b5cc52;--acc-doux:#f4f8e2}
+.etape-tete{border-bottom-color:var(--acc,var(--noir))}
+.etape-tete h2{background:linear-gradient(transparent 68%,var(--acc-doux,transparent) 68%,var(--acc-doux,transparent) 94%,transparent 94%);display:inline;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.etape .chg{border-top-color:var(--acc);background:var(--acc-doux);padding:16px 18px 18px;border-radius:0 0 8px 8px}
+.etape .fig small::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--acc);margin-right:8px;vertical-align:1px}
+.etape .out a:hover{text-decoration-color:var(--acc)}
+.etape .encart{background:var(--acc-doux)}
+.etape .encart h4::before{background:var(--acc)}
+/* étiquettes de thème : une pastille pâle par thème */
+.tag{padding:2px 9px;border-radius:999px;background:#efeeec;color:var(--noir)}
+.tag.t-ia{background:#fdecee;color:#b8303c}
+.tag.t-marketing{background:#f4f8e2;color:#5d6b1e}
+.tag.t-communication{background:#f1eeee;color:#5c5655}
+.tag.t-design{background:#fde9dc;color:#a2481f}
+.tag.t-digital{background:#eef2f5;color:#3f5566}
+/* métier et contexte : filet de couleur alterné */
+.mgrid article:nth-child(odd),.cgrid article:nth-child(odd){border-top:3px solid var(--rouge)}
+.mgrid article:nth-child(even),.cgrid article:nth-child(even){border-top:3px solid var(--vert)}
+.aussi li{border-left:3px solid transparent;padding-left:14px;transition:border-color .3s}
+.aussi li:hover{border-left-color:var(--vert)}

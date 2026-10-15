@@ -78,8 +78,7 @@ def barre(base, actif):
 
 
 def pied(base):
-    return f'''<footer class="wrap"><div class="max"><span>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}.</span>
-<span><a href="https://www.linkedin.com/in/" rel="noopener">LinkedIn</a></span></div></footer></body></html>'''
+    return f'''<footer class="wrap"><div class="max"><span>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée.</span></div></footer></body></html>'''
 
 
 def lien_out(url, label, petit=""):

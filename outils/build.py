@@ -50,16 +50,16 @@ def tete(titre, description, chemin, image=None, base=""):
     return f'''<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{e(titre)}</title><meta name="description" content="{e(description)}"><meta name="author" content="{AUTEUR}">{ROBOTS}
 <link rel="canonical" href="{SITE}{chemin}">
-<meta property="og:type" content="article"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="La veille de {AUTEUR}">
+<meta property="og:type" content="article"><meta property="og:locale" content="fr_FR"><meta property="og:site_name" content="Béné Germaine · la veille du lundi de {AUTEUR}">
 <meta property="og:title" content="{e(titre)}"><meta property="og:description" content="{e(description)}"><meta property="og:url" content="{SITE}{chemin}">{og}
-{FONTS}<link rel="stylesheet" href="{base}assets/style.css"></head><body>'''
+{FONTS}<link rel="stylesheet" href="{base}assets/style.css"><link rel="icon" href="{base}assets/favicon.svg" type="image/svg+xml"></head><body>'''
 
 
 def barre(base, actif):
     def l(href, txt, cle, cls=""):
         cur = ' aria-current="page"' if cle == actif else ""
         return f'<a href="{base}{href}"{cur}{(" class=" + chr(34) + cls + chr(34)) if cls else ""}>{txt}</a>'
-    return f'''<header class="site wrap"><div class="max"><a class="nom" href="{base}index.html">La veille<span>.</span> {AUTEUR}</a>
+    return f'''<header class="site wrap"><div class="max"><a class="logo" href="{base}index.html" aria-label="Béné Germaine, la veille du lundi de {AUTEUR} : accueil"><span class="l-bene">Béné</span><span class="l-wm"><span class="gsq">G</span>ermaine<span class="pt">.</span></span></a>
 <nav aria-label="Navigation du site">{l("index.html","Dernier numéro","index")}{l("archives.html","Archives","archives")}{l("livre-blanc.html","Le livre blanc","lb")}</nav></div></header>'''
 
 
@@ -109,7 +109,7 @@ def page_numero(n, prec, suiv, base):
         if x.get("encart"):
             enc = f'<aside class="encart"><h4>{e(x["encart"]["titre"])}</h4><p>{e(x["encart"]["texte"])}</p></aside>'
         et.append(f'''<section class="etape wrap {("ton-rouge", "ton-vert")[i % 2]}" id="{x["id"]}" aria-labelledby="h-{x["id"]}"><div class="max">
-  <div class="etape-tete"><span class="rang" aria-hidden="true">{i + 1:02d}</span><div><p class="kicker">Le fil de la semaine</p><h2 id="h-{x["id"]}">{e(x["titre"])}</h2></div></div>
+  <div class="etape-tete"><span class="rang gsq" aria-hidden="true">{i + 1:02d}</span><div><p class="kicker">Le fil de la semaine</p><h2 id="h-{x["id"]}">{e(x["titre"])}</h2></div></div>
   {photo(base, x.get("image"))}{faits}{enc}</div>
 </section>''')
     entrees = [(x["id"], f"{i + 1:02d}", x["titre"]) for i, x in enumerate(n["etapes"])]

@@ -23,8 +23,12 @@ img{max-width:100%;display:block}
 .site{padding-block:22px;border-bottom:1px solid var(--ligne);font-size:15px}
 .site .max{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap}
 .site a{text-decoration:none}
-.site .nom{font-weight:700;letter-spacing:-.01em}
-.site .nom span{color:var(--rouge)}
+.logo{display:inline-flex;align-items:baseline;gap:7px;text-decoration:none;color:var(--noir);line-height:1}
+.l-bene{font-weight:700;font-size:15px;letter-spacing:-.01em}
+.l-wm{font-weight:700;font-size:27px;letter-spacing:-.035em}
+.pt{color:var(--rouge)}
+/* le code de la marque : une lettre ou un numéro posé de travers sur un carré rouge, comme un papier découpé */
+.gsq{display:inline-grid;place-items:center;background:var(--rouge);color:#fff;border-radius:.12em;min-width:.82em;height:.9em;padding:0 .06em;transform:rotate(-6deg);margin-right:.05em;vertical-align:.03em;font-weight:700}
 .site nav{display:flex;gap:24px;flex-wrap:wrap}
 .site nav a{color:var(--gris)}
 .site nav a:hover,.site nav a[aria-current="page"]{color:var(--noir)}
@@ -75,7 +79,7 @@ img{max-width:100%;display:block}
 /* étapes */
 .etape{padding-block:clamp(64px,9vw,120px)}
 .etape-tete{display:grid;grid-template-columns:auto minmax(0,1fr);gap:clamp(16px,3vw,36px);align-items:end;margin-bottom:clamp(32px,4vw,52px);padding-bottom:clamp(20px,3vw,28px);border-bottom:3px solid var(--noir)}
-.etape-tete .rang{font-size:clamp(72px,11vw,150px);line-height:.8;font-weight:700;letter-spacing:-.06em;color:var(--rouge);font-variant-numeric:tabular-nums}
+.etape-tete .rang{font-size:clamp(44px,6vw,76px);height:auto;padding:.12em .22em;line-height:1;letter-spacing:-.04em;border-radius:10px;font-variant-numeric:tabular-nums;align-self:center}
 .etape-tete .kicker{color:var(--gris);margin-bottom:8px}
 .etape-tete h2{margin:0;font-size:clamp(32px,4.6vw,58px);letter-spacing:-.03em;line-height:1.08;max-width:20ch;text-wrap:balance}
 .photo{margin:0 0 clamp(32px,4vw,48px)}

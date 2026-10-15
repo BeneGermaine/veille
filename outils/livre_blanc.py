@@ -171,7 +171,7 @@ def ouverture(num, titre, contenu):
     nom, _, sous = titre.partition(" : ")
     fig = f'<figure class="ouv-img {style} {acc}"><img src="img/{img}" alt=""></figure>' if img else ""
     return f'''<section class="chapitre">
-  <header class="ouv"><div class="ouv-ligne"><div class="ouv-num">{num:02d}</div><div><p class="ouv-k">{html.escape(nom)}</p><h2>{html.escape((sous[:1].upper() + sous[1:]) if sous else nom)}</h2></div></div>
+  <header class="ouv"><div class="ouv-ligne"><div class="ouv-num gsq">{num:02d}</div><div><p class="ouv-k">{html.escape(nom)}</p><h2>{html.escape((sous[:1].upper() + sous[1:]) if sous else nom)}</h2></div></div>
   <p class="ouv-chapo">{html.escape(chapo)}</p>{fig}</header>
   <div class="corps">{rendu(reste)}</div></section>'''
 
@@ -204,7 +204,7 @@ def construire():
 <style>{CSS}</style></head><body>
 <section class="couverture">
   <figure><img src="img/couverture.jpg" alt=""></figure>
-  <div class="couv-txt"><p class="couv-k">Livre blanc · Janvier à septembre 2026</p>
+  <div class="couv-txt"><div class="logo-lb"><span class="b">Béné</span><span class="w"><span class="gsq">G</span>ermaine<span style="color:#e64855">.</span></span><small>LA VEILLE DU LUNDI</small></div><p class="couv-k">Livre blanc · Janvier à septembre 2026</p>
   <h1>{html.escape(nom_titre)}</h1><p class="couv-sous">{html.escape(sous_titre)}</p>
   <p class="couv-acc">{html.escape(accroche)}</p>
   <p class="couv-aut"><strong>{AUTEUR}</strong> · Marketing et communication B2B · Octobre 2026</p></div>
@@ -273,9 +273,12 @@ li{margin-bottom:3pt}
 
 /* chapitres : à la suite, sans page blanche */
 .chapitre{margin-top:20pt}
+.chrono + .chapitre{break-before:page;margin-top:0}
 .ouv{break-inside:avoid;break-after:avoid}
 .ouv-ligne{display:flex;align-items:flex-end;gap:12pt;margin-bottom:6pt}
-.ouv-num{font-size:52pt;font-weight:700;line-height:.8;letter-spacing:-.05em;color:var(--rouge)}
+.gsq{display:inline-grid;place-items:center;background:var(--rouge);color:#fff;border-radius:.12em;min-width:.82em;height:.9em;padding:0 .06em;transform:rotate(-6deg);margin-right:.05em;font-weight:700}
+.ouv-num{font-size:30pt;line-height:1;height:auto;padding:4pt 8pt;border-radius:6pt;letter-spacing:-.03em;align-self:center}
+.logo-lb{display:flex;align-items:baseline;gap:5pt;font-weight:700;line-height:1;margin-bottom:12pt}.logo-lb .b{font-size:12pt}.logo-lb .w{font-size:22pt;letter-spacing:-.035em}.logo-lb small{font-size:7.5pt;letter-spacing:.3em;color:var(--gris);margin-left:8pt;font-weight:700}
 .ouv h2{font-size:20pt;margin:0}
 .ouv-chapo{font-size:10.8pt;line-height:1.5;color:#333;padding-bottom:10pt;border-bottom:3px solid var(--noir);margin-bottom:10pt}
 .ouv-img{margin:0 0 12pt;height:56mm;border-radius:8pt;overflow:hidden;position:relative;break-before:avoid}

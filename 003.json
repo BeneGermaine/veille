@@ -1,0 +1,276 @@
+{
+ "numero": 3,
+ "slug": "003",
+ "lundi": "2026-10-19",
+ "label": "Lundi 19 octobre 2026",
+ "titre": "Les IA deviennent la nouvelle vitrine des marques.",
+ "chapo": [
+  "Google et OpenAI avancent leurs pions pour vendre de la publicité dans leurs assistants, pendant que Figma et OpenAI donnent plus d'autonomie aux agents, à condition de leur écrire des règles.",
+  "Pour une marque B2B, être citée par une IA, être lisible par une machine et garder une voix humaine crédible devient un seul et même chantier."
+ ],
+ "themes": [
+  "IA",
+  "Digital",
+  "Communication",
+  "Marketing",
+  "Design"
+ ],
+ "chiffres_cles": [
+  {
+   "chiffre": "Moins de la moitié",
+   "texte": "des 100 marques les plus mentionnées par les IA font aussi partie des 100 sites les plus cités comme sources (étude publiée par Semrush, qui vend des outils de suivi de visibilité)",
+   "source": "Semrush, 13 oct.",
+   "url": "https://www.semrush.com/news/474244-semrush-releases-2026-ai-visibility-index-revealing-its-first-uk-benchmark/"
+  },
+  {
+   "chiffre": "3 fois",
+   "texte": "plus longues : les requêtes tapées dans AI Mode par rapport à une recherche classique, selon Google (chiffre de Google, non vérifié de façon indépendante)",
+   "source": "CB News, 16 oct.",
+   "url": "https://www.cbnews.fr/digital/ai-overviews-google-ads-invite-les-marques-repenser-leur-sites"
+  },
+  {
+   "chiffre": "+9 %",
+   "texte": "d'attention pour les pubs sur les sites d'information premium européens (66,5 contre 61,3 en moyenne mondiale), selon IAS",
+   "source": "Stratégies, 16 oct.",
+   "url": "https://www.strategies.fr/actualites/culture-tech/LQ6759109C/les-contenus-politiques-offrent-une-meilleure-performance-publicitaire-selon-ias.html"
+  },
+  {
+   "chiffre": "17 fois",
+   "texte": "plus de lignes de code produites, pour environ 1,3 fois plus de versions livrées, selon la directrice du design de Figma : produire plus ne veut pas dire livrer plus",
+   "source": "TechCrunch, 15 oct.",
+   "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+  }
+ ],
+ "regard": {
+  "texte": "En B2B, la vraie bataille de 2027 ne sera pas d'acheter de la pub dans ChatGPT, mais d'être la source que ChatGPT cite. Une plateforme de marque qui n'existe qu'en PDF est déjà dépassée : il faut l'écrire pour qu'un agent puisse l'appliquer, et pour qu'un humain ait envie de la porter.",
+  "statut": "valide"
+ },
+ "etapes": [
+  {
+   "id": "espace-pub",
+   "titre": "Un nouvel espace publicitaire",
+   "faits": [
+    "aimode",
+    "chatgpt-ads"
+   ]
+  },
+  {
+   "id": "visibilite",
+   "titre": "Une visibilité à mesurer autrement",
+   "faits": [
+    "semrush"
+   ]
+  },
+  {
+   "id": "regles-agents",
+   "titre": "Des règles de marque écrites pour les agents",
+   "faits": [
+    "figma",
+    "chrome"
+   ]
+  }
+ ],
+ "faits": {
+  "aimode": {
+   "id": "aimode",
+   "themes": [
+    "IA",
+    "Marketing"
+   ],
+   "titre": "Google teste la publicité dans AI Mode",
+   "mot": "AI Mode",
+   "resume": "Google a commencé à tester des annonces dans AI Mode, son moteur de recherche conversationnel, jusqu'ici sans publicité. Le test concerne les utilisateurs qui ont connecté leurs applications (Gmail, Photos, Agenda) via Personal Intelligence. Google assure que les annonces ne se basent pas directement sur la boîte mail ou les photos, que les annonceurs n'y ont pas accès et que les données sensibles sont exclues. Aucun pays, calendrier ni outil annonceur n'a été précisé. Bémol : Google n'a pas publié d'annonce officielle, le test a été confirmé par Google à Search Engine Land.",
+   "impact": "La recherche par IA, où vos acheteurs préparent leurs décisions, devient un espace payant : il faudra arbitrer entre visibilité gagnée (être cité) et visibilité achetée. À surveiller dès maintenant avec votre agence média.",
+   "sources": [
+    [
+     "Search Engine Land",
+     "16 oct.",
+     "https://searchengineland.com/google-begins-testing-ads-in-ai-mode-for-users-with-personal-intelligence-enabled-496990"
+    ],
+    [
+     "The Keyword",
+     "17 oct.",
+     "https://www.thekeyword.co/news/google-personal-intelligence-ads"
+    ]
+   ],
+   "chiffre": [
+    "16 oct.",
+    "début du test des annonces dans AI Mode, jusqu'ici sans publicité"
+   ]
+  },
+  "chatgpt-ads": {
+   "id": "chatgpt-ads",
+   "themes": [
+    "IA",
+    "Marketing"
+   ],
+   "titre": "OpenAI structure la vente de ses pubs dans ChatGPT",
+   "mot": "ChatGPT Ads",
+   "resume": "OpenAI affecte désormais des « ChatGPT Ads Account Managers », des interlocuteurs humains qui suivent les campagnes des annonceurs avec un point toutes les deux semaines. L'info vient d'un e-mail partagé par un annonceur ; les conditions d'accès ne sont pas connues (une seule source). Selon The Information, OpenAI aurait annoncé à ses investisseurs 2,4 milliards de dollars de revenus publicitaires pour 2026 et risquerait de ne pas les atteindre : information non confirmée pour l'instant, reprise seulement par des relais. Le seul chiffre donné par OpenAI est un rythme annuel de 1 milliard de dollars, annoncé le 31 août.",
+   "impact": "La pub dans ChatGPT passe du test à une vraie offre commerciale, avec accompagnement : c'est le moment de demander des conditions d'essai. Mais l'audience et les résultats restent peu documentés : petit budget de test, pas d'engagement au plan média 2027 sans preuve.",
+   "sources": [
+    [
+     "Search Engine Roundtable",
+     "14 oct.",
+     "https://www.seroundtable.com/openai-chatgpt-ads-account-manager-42278.html"
+    ],
+    [
+     "FourWeekMBA (d'après The Information)",
+     "17 oct.",
+     "https://fourweekmba.com/ai-openai-ads-hit-1b-run-rate-behind-its-2-4b-2026-target/"
+    ]
+   ],
+   "chiffre": [
+    "2 semaines",
+    "le rythme des points de suivi proposés aux annonceurs"
+   ]
+  },
+  "semrush": {
+   "id": "semrush",
+   "themes": [
+    "IA",
+    "Marketing",
+    "Digital"
+   ],
+   "titre": "Être mentionnée par une IA ne veut pas dire être citée",
+   "mot": "Semrush",
+   "resume": "Semrush, éditeur d'outils SEO, a comparé sur 22 secteurs et quatre IA (ChatGPT, Gemini, AI Mode, AI Overviews) les marques nommées dans les réponses et les sites utilisés comme sources. Les deux classements se recoupent peu : moins de la moitié des 100 marques les plus mentionnées sont aussi parmi les 100 sites les plus cités. Exemple : aux États-Unis, Ford est la 18e marque la plus mentionnée par ChatGPT, mais son site n'est que le 1 055e cité. Données américaines et britanniques ; l'étude est publiée par Semrush, qui vend lui-même des outils de suivi de visibilité dans les IA.",
+   "impact": "La notoriété fait parler de vous, mais c'est le contenu expert (études, guides, pages de référence) qui fait de votre site la source que l'IA consulte. Il faut suivre deux indicateurs séparés : « nous sommes nommés » et « notre site est cité ».",
+   "sources": [
+    [
+     "Semrush",
+     "13 oct.",
+     "https://www.semrush.com/news/474244-semrush-releases-2026-ai-visibility-index-revealing-its-first-uk-benchmark/"
+    ],
+    [
+     "Search Engine Land",
+     "14 oct.",
+     "https://searchengineland.com/your-brand-can-win-the-mention-and-lose-the-citation-496011"
+    ],
+    [
+     "Relevant Audience",
+     "15 oct.",
+     "https://www.relevantaudience.com/geo/semrush-ai-visibility-index-h2-2026-mentions-vs-citations/"
+    ]
+   ],
+   "chiffre": [
+    "1 055e",
+    "le rang du site de Ford parmi les sources citées par ChatGPT, alors que la marque est 18e en mentions"
+   ]
+  },
+  "figma": {
+   "id": "figma",
+   "themes": [
+    "Design",
+    "IA"
+   ],
+   "titre": "Figma lance Specs, un espace pour écrire les règles que suivront les agents",
+   "mot": "Figma",
+   "resume": "Figma, l'outil de design collaboratif utilisé par la plupart des équipes produit et créa, a présenté à sa conférence Config en Inde Figma Specs : un éditeur de texte pour documenter l'intention d'un projet et le langage de design de l'entreprise, lisible par les équipes comme par les agents IA. Bibliothèques de design, de code et guidelines sont centralisées pour que les agents respectent la marque. Les « code layers » (prototypes interactifs en code) passent en bêta ouverte et une vingtaine de nouveaux outils se connectent à Figma. Déploiement progressif dans les semaines à venir.",
+   "impact": "La charte graphique et la plateforme de marque doivent pouvoir être lues et appliquées par une machine, pas seulement par une agence. Bonne occasion de remettre à plat vos guidelines : ce qui n'est pas écrit clairement ne sera pas respecté par les agents.",
+   "sources": [
+    [
+     "TechCrunch",
+     "15 oct.",
+     "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
+    ],
+    [
+     "Blog du Modérateur",
+     "15 oct.",
+     "https://www.blogdumoderateur.com/figma-prototyper-code-directement-canvas-collaboratif/"
+    ]
+   ],
+   "chiffre": [
+    "14 oct.",
+    "présentation de Figma Specs à la conférence Config, en Inde"
+   ]
+  },
+  "chrome": {
+   "id": "chrome",
+   "themes": [
+    "IA",
+    "Digital"
+   ],
+   "titre": "ChatGPT peut désormais agir dans les onglets Chrome",
+   "mot": "Agents",
+   "resume": "OpenAI a enrichi l'extension ChatGPT pour Chrome. En mode Chat, ChatGPT lit le contenu des onglets ouverts ; en mode Work, il peut agir dedans : envoyer des messages, remplir des formulaires, télécharger des fichiers, regrouper des onglets, y compris sur des sites où l'utilisateur est déjà connecté (Gmail, LinkedIn, Salesforce, selon le guide d'OpenAI). Par défaut, ChatGPT demande l'autorisation avant d'agir sur chaque nouveau site, mais ne valide pas chaque envoi. Les offres et pays concernés ne sont pas précisés.",
+   "impact": "Un assistant peut maintenant agir dans vos outils (CRM, messagerie, LinkedIn) : il faut décider qui l'autorise, sur quels sites, et ce qui doit être relu avant envoi. Votre valeur se déplace vers la définition des règles et la validation finale.",
+   "sources": [
+    [
+     "tbreak",
+     "16 oct.",
+     "https://tbreak.com/chatgpt-chrome-extension-open-tabs/"
+    ],
+    [
+     "Blog Nouvelles Technologies",
+     "16 oct.",
+     "https://www.blog-nouvelles-technologies.fr/388640/chatgpt-extension-chrome-onglets/"
+    ]
+   ],
+   "chiffre": [
+    "15 oct.",
+    "annonce du mode Work de ChatGPT dans Chrome"
+   ]
+  }
+ },
+ "metier": [
+  {
+   "theme": "Communication",
+   "chiffre": "15 oct.",
+   "titre": "LinkedIn mise sur les experts et les créateurs",
+   "texte": "LinkedIn annonce un test de publicités vidéo avant les contenus de créateurs (avec partage des revenus), de nouveaux filtres dans la Creator Marketplace pour trouver des créateurs par expertise et audience, le retour des commentaires épinglés et les « Advice Sessions », des consultations payantes réservables depuis le profil, pour l'instant aux États-Unis. LinkedIn n'a pas donné de chiffres.",
+   "impact": "LinkedIn pousse les marques à passer par des experts incarnés plutôt que par la seule page entreprise. Programmes d'ambassadeurs et partenariats avec des créateurs B2B deviennent plus faciles à monter.",
+   "sources": [
+    [
+     "Social Media Today",
+     "15 oct.",
+     "https://www.socialmediatoday.com/news/linkedin-adds-new-creator-monetization-options/833179/"
+    ],
+    [
+     "Tubefilter",
+     "16 oct.",
+     "https://www.tubefilter.com/2026/10/16/linkedin-creator-monetization-update-advice-sessions-consulting/"
+    ]
+   ]
+  },
+  {
+   "theme": "Marketing",
+   "chiffre": "66,5",
+   "titre": "L'information premium capte plus d'attention publicitaire",
+   "texte": "IAS (Integral Ad Science, spécialiste de la mesure publicitaire) a analysé environ 7 milliards d'impressions sur plus de 50 sites d'information européens vérifiés : score d'attention de 66,5, contre 61,3 en moyenne mondiale. Les contenus politiques offrent 6 % d'attention en plus que la référence mondiale, un taux de réussite de campagne 40 % plus élevé et un coût pour mille impressions 37 % plus bas.",
+   "impact": "Bloquer trop largement l'actualité par peur du contexte coûte de l'attention et de la portée. Les médias d'information restent un contexte de confiance utile pour la notoriété B2B.",
+   "sources": [
+    [
+     "CB News",
+     "15 oct.",
+     "https://www.cbnews.fr/etudes/pub-digitale-les-sites-information-premium-generent-davantage-attention-ias"
+    ],
+    [
+     "Stratégies",
+     "16 oct.",
+     "https://www.strategies.fr/actualites/culture-tech/LQ6759109C/les-contenus-politiques-offrent-une-meilleure-performance-publicitaire-selon-ias.html"
+    ]
+   ]
+  },
+  {
+   "theme": "Communication",
+   "chiffre": "3",
+   "titre": "Camden se repositionne autour de la proximité",
+   "texte": "Camden, agence de création indépendante présente à Lyon, Paris, Montréal, Toronto, São Paulo et Hong Kong, dévoile « Come Closer », son nouveau positionnement mondial, en trois engagements : plus proche des publics, des clients et de leurs ambitions. « Les marques n'ont pas un problème de message, elles ont un problème de distance », résume Fanny Mounier, directrice générale de Camden France. Les deux articles reprennent sans doute le même communiqué.",
+   "impact": "Un bel exemple de plateforme de marque simple : une idée, trois preuves formulées comme des engagements. Face aux contenus produits en masse, la proximité devient un argument.",
+   "sources": [
+    [
+     "J'ai un pote dans la com",
+     "16 oct.",
+     "https://jai-un-pote-dans-la.com/camden-come-closer-nouveau-positionnement-proximite/"
+    ],
+    [
+     "CB News",
+     "18 oct.",
+     "https://www.cbnews.fr/conseil/avec-concept-come-closer-camden-met-place-son-repositionnement"
+    ]
+   ]
+  }
+ ],
+ "tendance": "La plateforme de marque devient un fichier de règles lisible par les machines. Avec Figma Specs, les bibliothèques de marque centralisées et des agents qui agissent dans nos outils, la charte ne sert plus seulement aux humains : elle doit pouvoir être appliquée par un agent. En face, les IA de recherche deviennent payantes et choisissent leurs sources. Les marques B2B qui gagneront sont celles qui écrivent clairement qui elles sont, et qui publient des contenus assez experts pour être cités."
+}

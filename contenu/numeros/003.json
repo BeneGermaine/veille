@@ -15,6 +15,11 @@
   "Marketing",
   "Design"
  ],
+ "image": {
+  "src": "assets/img/003-une.jpg",
+  "alt": "Collage : une main pointe vers une vitrine d'où sort une bulle de dialogue, à côté d'une loupe",
+  "style": "collage"
+ },
  "chiffres_cles": [
   {
    "chiffre": "Moins de la moitié",
@@ -59,7 +64,12 @@
    "titre": "Une visibilité à mesurer autrement",
    "faits": [
     "semrush"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/003-visibilite.jpg",
+    "alt": "Collage : un smartphone affichant une bulle de dialogue, entouré de guillemets, d'une étiquette et d'un œil",
+    "style": "collage"
+   }
   },
   {
    "id": "regles-agents",
@@ -67,7 +77,12 @@
    "faits": [
     "figma",
     "chrome"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/003-regles.jpg",
+    "alt": "Collage : un bras robotisé pose un carré vert sur une pile de feuilles, une main tient une règle",
+    "style": "collage"
+   }
   }
  ],
  "faits": {

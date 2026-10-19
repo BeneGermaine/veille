@@ -177,7 +177,7 @@ def construire(og=False):
     # archives
     themes = sorted({t for n in nums for t in n["themes"]})
     lis = "".join(f'''<li data-themes="{e(",".join(n["themes"]))}"><a href="numeros/{n["slug"]}.html"><span class="n">{n["numero"]}</span>
-<div><h2>{e(n["titre"])}</h2><p>{e(" · ".join(x["titre"] for x in n["etapes"]))}</p></div><span class="d">{e(n["periode"])}</span></a></li>''' for n in reversed(nums))
+<div><h2>{e(n["titre"])}</h2><p>{e(" · ".join(x["titre"] for x in n["etapes"]))}</p></div><span class="d">{e(n["label"])}</span></a></li>''' for n in reversed(nums))
     boutons = '<button type="button" aria-pressed="true" data-t="">Tous</button>' + "".join(f'<button type="button" aria-pressed="false" data-t="{e(t)}">{e(t)}</button>' for t in themes)
     archives = f'''<main class="arch wrap"><div class="max"><h1>Archives</h1><p class="lede">Tous les numéros de la veille, du plus récent au plus ancien. {len(nums)} numéro{"s" if len(nums) > 1 else ""} à ce jour.</p>
 <div class="filtres" role="group" aria-label="Filtrer par thème">{boutons}</div><ul class="liste" id="liste">{lis}</ul></div></main>

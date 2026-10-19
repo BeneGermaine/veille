@@ -1,308 +1,317 @@
 {
-  "numero": 1,
-  "slug": "001",
-  "lundi": "2026-10-05",
-  "periode": "1er – 7 octobre 2026",
-  "label": "Semaine du 1er octobre 2026",
-  "titre": "Les assistants IA deviennent un canal.",
-  "chapo": [
-    "Comme le moteur de recherche ou les réseaux sociaux avant eux, ChatGPT, Claude et les autres assistants deviennent un lieu où une marque doit être présente.",
-    "Cette semaine, cinq annonces l'illustrent : un espace publicitaire qui s'ouvre, une visibilité qui se mesure, des contenus qui se tracent, et un poste de travail où l'IA s'installe."
-  ],
-  "themes": [
-    "IA",
-    "Digital",
-    "Communication",
-    "Marketing",
-    "Design"
-  ],
-  "chiffres_cles": [
-    {
-      "chiffre": "67 %",
-      "texte": "des consommateurs font plus confiance à une recommandation d'IA qu'à un influenceur",
-      "source": "Contentsquare, sept. 2026",
-      "url": "https://www.cbnews.fr/etudes/67-consommateurs-font-plus-confiance-recommandation-ia-qu-influenceur"
-    },
-    {
-      "chiffre": "8",
-      "texte": "moteurs IA (ChatGPT, Claude, Perplexity…) dont on peut désormais mesurer le trafic",
-      "source": "AppsFlyer, 7 oct.",
-      "url": "https://www.cbnews.fr/digital/aeo-appsflyer-etend-sa-mesure-aux-moteurs-recherche-ia"
-    },
-    {
-      "chiffre": "fin oct.",
-      "texte": "premier test de publicités visuelles dans ChatGPT, aux États-Unis",
-      "source": "OpenAI, 5 oct.",
-      "url": "https://www.ghacks.net/2026/10/06/openai-will-test-visual-ads-in-chatgpt-during-image-generation-in-the-us-later-this-month/"
-    },
-    {
-      "chiffre": "2 déc.",
-      "texte": "date limite du marquage technique des contenus IA pour les outils déjà sur le marché (AI Act)",
-      "source": "Leto",
-      "url": "https://www.leto.legal/news/ai-act-echeance-2-aout-2026-mode-emploi"
-    }
-  ],
-  "regard": {
-    "texte": "De plus en plus d'acheteurs B2B préparent leur short-list avec une IA. Si votre marque n'y apparaît pas, elle n'est même pas comparée : le travail de marque redevient un travail de preuves, avec des contenus d'experts, des cas clients et des informations cohérentes partout.",
-    "statut": "valide"
+ "numero": 1,
+ "slug": "001",
+ "lundi": "2026-10-05",
+ "label": "Lundi 5 octobre 2026",
+ "titre": "Les assistants IA deviennent un canal.",
+ "chapo": [
+  "Comme le moteur de recherche ou les réseaux sociaux avant eux, ChatGPT, Claude et les autres assistants deviennent un lieu où une marque doit être présente.",
+  "Ces derniers jours, cinq annonces l'illustrent (dont deux de fin septembre, reprises cette semaine) : un espace publicitaire qui s'ouvre, une visibilité qui se mesure, des contenus qui se tracent, et un poste de travail où l'IA s'installe."
+ ],
+ "themes": [
+  "IA",
+  "Digital",
+  "Communication",
+  "Marketing",
+  "Design"
+ ],
+ "chiffres_cles": [
+  {
+   "chiffre": "67 %",
+   "texte": "des consommateurs (France et États-Unis) font plus confiance à une recommandation d'IA qu'à un influenceur pour juger une marque inconnue (étude de septembre, une seule source)",
+   "source": "Contentsquare via CB News, 13 sept.",
+   "url": "https://www.cbnews.fr/etudes/67-consommateurs-font-plus-confiance-recommandation-ia-qu-influenceur"
   },
-  "etapes": [
-    {
-      "id": "espace-pub",
-      "titre": "Un nouvel espace publicitaire",
-      "faits": [
-        "pubs"
-      ],
-      "image": {
-        "src": "assets/img/001-pub.jpg",
-        "alt": "Un chimpanzé en casque d'astronaute, le regard tourné vers l'horizon",
-        "style": "photo",
-        "accent": "vert"
-      }
-    },
-    {
-      "id": "visibilite",
-      "titre": "Une visibilité qui devient mesurable",
-      "faits": [
-        "mesure"
-      ],
-      "encart": {
-        "titre": "Le saviez-vous ? AEO ou GEO",
-        "texte": "L'AEO (Answer Engine Optimization) consiste à rédiger ses contenus pour être LA réponse à une question précise. Le GEO (Generative Engine Optimization) vise à être cité ou recommandé dans les réponses rédigées par une IA générative. Les deux se recoupent largement : l'un répond à la question, l'autre fait entrer la marque dans la réponse."
-      },
-      "image": {
-        "src": "assets/img/001-mesure.jpg",
-        "alt": "Collage : mains sur un ordinateur portable, sous une bulle affichant cinq étoiles",
-        "style": "collage"
-      }
-    },
-    {
-      "id": "tracabilite",
-      "titre": "Des contenus désormais traçables",
-      "faits": [
-        "filigrane"
-      ],
-      "encart": {
-        "titre": "Le saviez-vous ? L'AI Act",
-        "texte": "Le règlement européen sur l'IA s'applique par étapes. Depuis le 2 août 2026, un chatbot doit dire qu'il est une IA, un deepfake doit être signalé, et un texte d'intérêt public généré par IA aussi, sauf s'il a été relu et assumé par une personne. Il n'y a pas d'obligation d'étiqueter tout contenu fait avec l'IA."
-      },
-      "image": {
-        "src": "assets/img/001-trace.jpg",
-        "alt": "Collage : deux mains tiennent un casque audio autour d'une bouche ouverte d'où s'échappent des lettres et des guillemets",
-        "style": "collage"
-      }
-    },
-    {
-      "id": "poste-de-travail",
-      "titre": "Un poste de travail augmenté",
-      "faits": [
-        "workspace",
-        "adobe"
-      ],
-      "image": {
-        "src": "assets/img/001-poste.jpg",
-        "alt": "Une équipe travaille autour d'une table en bois, ordinateurs portables et tablette ouverts",
-        "style": "photo",
-        "accent": "vert"
-      }
-    }
-  ],
-  "faits": {
-    "filigrane": {
-      "id": "filigrane",
-      "themes": [
-        "IA",
-        "Communication"
-      ],
-      "titre": "Les textes de ChatGPT vont porter un filigrane invisible en Europe",
-      "mot": "Filigrane",
-      "resume": "OpenAI a annoncé le 5 octobre un marquage invisible des textes produits par ChatGPT et Codex, pour se conformer à l'AI Act. Activé dans l'UE dans les prochaines semaines, pas par défaut au lancement. Le détecteur reste réservé à des organismes agréés, et une réécriture l'affaiblit beaucoup.",
-      "impact": "Un texte sorti tel quel de ChatGPT pourra, à terme, être identifié comme tel. C'est le moment de fixer une règle d'équipe claire : ce qu'on réécrit, ce qu'on signale, ce qu'on assume.",
-      "sources": [
-        [
-          "Blog du Modérateur",
-          "6 oct.",
-          "https://www.blogdumoderateur.com/textes-chatgpt-filigrane-invisible/"
-        ],
-        [
-          "TechCrunch",
-          "5 oct.",
-          "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
-        ]
-      ],
-      "chiffre": [
-        "UE",
-        "les textes de ChatGPT marqués d'un filigrane invisible, pour l'AI Act"
-      ]
-    },
-    "workspace": {
-      "id": "workspace",
-      "themes": [
-        "IA",
-        "Digital"
-      ],
-      "titre": "Claude arrive dans Google Docs, Sheets et Slides",
-      "mot": "Workspace",
-      "resume": "Anthropic lance en bêta un panneau latéral qui lit et modifie le fichier ouvert : réécriture avec suggestions dans Docs, formules et graphiques dans Sheets, slides au bon thème dans Slides. Pour les offres Pro, Max, Team et Enterprise.",
-      "impact": "Fini le copier-coller entre l'assistant et tes documents : on retravaille un brief, un tableau de suivi ou une présentation directement dans le fichier. Chaque modification demande ton accord.",
-      "sources": [
-        [
-          "Blog du Modérateur",
-          "7 oct.",
-          "https://www.blogdumoderateur.com/anthropic-lance-extension-claude-google-docs-sheets-slides/"
-        ],
-        [
-          "9to5Google",
-          "6 oct.",
-          "https://9to5google.com/2026/10/06/claude-google-docs-sheet-slides/"
-        ]
-      ],
-      "chiffre": [
-        "3",
-        "outils Google où Claude travaille directement : Docs, Sheets, Slides"
-      ]
-    },
-    "pubs": {
-      "id": "pubs",
-      "themes": [
-        "Marketing"
-      ],
-      "titre": "OpenAI va tester des publicités visuelles dans ChatGPT",
-      "mot": "Publicité",
-      "resume": "Un format de pub en images, affiché pendant qu'un utilisateur génère une image. Test aux États-Unis seulement, à partir de fin octobre. Les pubs sont étiquetées et séparées de l'image générée. Aucune date pour l'Europe.",
-      "impact": "Rien à activer en France pour l'instant, mais ChatGPT devient un vrai support publicitaire, avec ses outils de mesure et de protection de marque. À suivre pour les futurs plans média.",
-      "sources": [
-        [
-          "gHacks",
-          "6 oct.",
-          "https://www.ghacks.net/2026/10/06/openai-will-test-visual-ads-in-chatgpt-during-image-generation-in-the-us-later-this-month/"
-        ],
-        [
-          "WinBuzzer",
-          "5 oct.",
-          "https://winbuzzer.com/2026/10/05/chatgpt-to-test-visual-ads-during-image-generation-xcxwbn/"
-        ]
-      ],
-      "chiffre": [
-        "fin oct.",
-        "début du test des pubs visuelles dans ChatGPT, aux États-Unis"
-      ]
-    },
-    "mesure": {
-      "id": "mesure",
-      "themes": [
-        "Marketing",
-        "Digital"
-      ],
-      "titre": "On commence à pouvoir mesurer le trafic venu des IA",
-      "mot": "Mesure",
-      "resume": "AppsFlyer est une entreprise de mesure marketing, surtout utilisée par les applications mobiles pour savoir d'où viennent leurs utilisateurs. Elle ajoute désormais les moteurs de réponse IA (ChatGPT, Claude, Perplexity, Copilot, Gemini…) aux sources de trafic qu'elle sait reconnaître, et distingue ce qui vient de la pub de ce qui vient d'une simple mention.",
-      "impact": "La visibilité dans les réponses des IA sort du flou : elle devient un canal qu'on suit avec des chiffres. En B2B, la question à se poser dès maintenant : que répondent les IA quand un acheteur cherche une solution comme la vôtre ?",
-      "sources": [
-        [
-          "CB News",
-          "7 oct.",
-          "https://www.cbnews.fr/digital/aeo-appsflyer-etend-sa-mesure-aux-moteurs-recherche-ia"
-        ],
-        [
-          "Blog AppsFlyer",
-          "",
-          "https://www.appsflyer.com/blog/measurement-analytics/aeo-attribution-chatgpt-ads/"
-        ]
-      ],
-      "chiffre": [
-        "8",
-        "moteurs de réponse IA désormais mesurés par AppsFlyer"
-      ],
-      "note": "Surtout B2C (applications mobiles), mais le signal vaut aussi pour le B2B."
-    },
-    "adobe": {
-      "id": "adobe",
-      "themes": [
-        "Design"
-      ],
-      "titre": "Adobe permet de retoucher à la main dans ChatGPT",
-      "mot": "Retouche",
-      "resume": "Le module Adobe dans ChatGPT gagne une édition interactive : on demande une retouche en langage courant, puis on ajuste soi-même teinte, contraste et luminosité dans un panneau, sans quitter la conversation. Images et PDF. Annonce du 29 septembre, juste avant la période.",
-      "impact": "Les petites retouches de visuels se font sans ouvrir Photoshop ni solliciter un graphiste. Utile pour décliner vite un visuel de post ou de présentation.",
-      "sources": [
-        [
-          "CB News",
-          "4 oct.",
-          "https://www.cbnews.fr/creation/adobe-renforce-son-integration-chatgpt"
-        ],
-        [
-          "Blog Adobe",
-          "29 sept.",
-          "https://blog.adobe.com/en/publish/2026/09/29/openai-devday-2026-introducing-hands-on-editing-adobe-plugin-chatgpt"
-        ]
-      ],
-      "chiffre": [
-        "2",
-        "formats retouchables à la main dans ChatGPT : images et PDF"
-      ]
-    }
+  {
+   "chiffre": "8",
+   "texte": "moteurs IA (ChatGPT, Claude, Perplexity…) dont on peut désormais mesurer le trafic (annonce du 22 septembre)",
+   "source": "AppsFlyer, 22 sept.",
+   "url": "https://www.appsflyer.com/company/newsroom/pr/appsflyer-aeo-measurement/"
   },
-  "metier": [
-    {
-      "theme": "Marketing",
-      "chiffre": "+11,9 %",
-      "titre": "Le marché publicitaire mondial accélère en 2026",
-      "texte": "WARC prévoit 1 340 milliards de dollars de dépenses publicitaires en 2026. Réseaux sociaux (+21,3 %), search et retail media pèsent à eux trois 66,4 % du total, et Alphabet, Amazon et Meta en captent près de 60 % hors Chine.",
-      "impact": "Les budgets se concentrent sur quelques plateformes. Pour une marque B2B, c'est un argument pour renforcer ses canaux propres (site, contenus, newsletter) plutôt que de tout louer.",
-      "sources": [
-        [
-          "CB News",
-          "8 oct.",
-          "https://www.cbnews.fr/etudes/marche-mondial-publicite-119-2026-warc"
-        ]
-      ]
-    },
-    {
-      "theme": "Communication",
-      "chiffre": "–20 %",
-      "titre": "Les sites d'information perdent un cinquième de leurs visites en un an",
-      "texte": "Selon l'ACPM, les grandes marques d'information ont perdu environ 20 % de visites entre septembre 2025 et septembre 2026 (Le Parisien –40,9 %, franceinfo –29,1 %). CB News y voit en partie l'effet des réponses IA de Google, arrivées en France fin juillet.",
-      "impact": "Les relations presse et le contenu de marque ne peuvent plus compter seulement sur le trafic des médias. C'est le même fil que cette semaine : les réponses IA captent l'attention.",
-      "sources": [
-        [
-          "CB News",
-          "8 oct.",
-          "https://www.cbnews.fr/medias/acpm-sites-applis-baisse-frequentation-marques-information-septembre"
-        ]
-      ]
-    }
-  ],
-  "contexte": [
-    {
-      "titre": "L'IA prescrit les achats",
-      "texte": "67 % des consommateurs font plus confiance à une recommandation d'IA qu'à un influenceur, et 47 % ont déjà changé de marque à cause d'elle. C'est tout l'enjeu du GEO : être bien cité dans les réponses des IA.",
-      "source": "Contentsquare via CB News, 13 sept.",
-      "url": "https://www.cbnews.fr/etudes/67-consommateurs-font-plus-confiance-recommandation-ia-qu-influenceur"
-    },
-    {
-      "titre": "Le vrai reprend de la valeur",
-      "texte": "58 % jugent les photos et vidéos de vrais clients plus fiables, contre 35 % pour les contenus de marque. Plus l'IA produit, plus la preuve humaine compte.",
-      "source": "Skeepers via Comarketing-News, 16 sept.",
-      "url": "https://comarketing-news.fr/plus-lia-progresse-plus-les-consommateurs-veulent-du-vrai/"
-    }
-  ],
-  "aussi": [
-    {
-      "texte": "Mistral Large 4 : Mistral AI présente son nouveau grand modèle, entraîné en Europe. Performances annoncées par Mistral, non vérifiées par un tiers.",
-      "source": "Blog du Modérateur",
-      "url": "https://www.blogdumoderateur.com/mistral-large-4-mistral-ai-veut-reduire-ecart-modeles-open-weight-chinois/"
-    },
-    {
-      "texte": "Des sites marchands bloquent les assistants qui agissent à la place des internautes ; Meta, Walmart, Stripe et d'autres travaillent sur un standard commun.",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/"
-    }
-  ],
-  "tendance": "Les assistants IA deviennent un canal à part entière, avec ses règles : on y fait de la pub, on y mesure sa visibilité, et les contenus qui en sortent sont marqués. Pour le marketing, l'IA n'est plus seulement un outil de production, c'est aussi un endroit où la marque doit être présente et mesurable.",
-  "image": {
-    "src": "assets/img/001-une.jpg",
-    "alt": "Collage : bouches qui parlent et bulles de dialogue sur fond violet et jaune",
-    "style": "collage"
+  {
+   "chiffre": "oct.",
+   "texte": "premier test de publicités visuelles dans ChatGPT, aux États-Unis, plus tard en octobre",
+   "source": "TechCrunch, 5 oct.",
+   "url": "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/"
+  },
+  {
+   "chiffre": "2 déc.",
+   "texte": "date limite du marquage technique des contenus générés, pour les outils d'IA générative déjà sur le marché avant le 2 août (AI Act, accord Digital Omnibus)",
+   "source": "Leto, 1er août",
+   "url": "https://www.leto.legal/news/ai-act-echeance-2-aout-2026-mode-emploi"
   }
+ ],
+ "regard": {
+  "texte": "De plus en plus d'acheteurs B2B préparent leur short-list avec une IA. Si votre marque n'y apparaît pas, elle n'est même pas comparée : le travail de marque redevient un travail de preuves, avec des contenus d'experts, des cas clients et des informations cohérentes partout.",
+  "statut": "valide"
+ },
+ "etapes": [
+  {
+   "id": "espace-pub",
+   "titre": "Un nouvel espace publicitaire",
+   "faits": [
+    "pubs"
+   ],
+   "image": {
+    "src": "assets/img/001-pub.jpg",
+    "alt": "Un chimpanzé en casque d'astronaute, le regard tourné vers l'horizon",
+    "style": "photo",
+    "accent": "vert"
+   }
+  },
+  {
+   "id": "visibilite",
+   "titre": "Une visibilité qui devient mesurable",
+   "faits": [
+    "mesure"
+   ],
+   "encart": {
+    "titre": "Le saviez-vous ? AEO ou GEO",
+    "texte": "L'AEO (Answer Engine Optimization) consiste à rédiger ses contenus pour être LA réponse à une question précise. Le GEO (Generative Engine Optimization) vise à être cité ou recommandé dans les réponses rédigées par une IA générative. Les deux se recoupent largement : l'un répond à la question, l'autre fait entrer la marque dans la réponse."
+   },
+   "image": {
+    "src": "assets/img/001-mesure.jpg",
+    "alt": "Collage : mains sur un ordinateur portable, sous une bulle affichant cinq étoiles",
+    "style": "collage"
+   }
+  },
+  {
+   "id": "tracabilite",
+   "titre": "Des contenus désormais traçables",
+   "faits": [
+    "filigrane"
+   ],
+   "encart": {
+    "titre": "Le saviez-vous ? L'AI Act",
+    "texte": "Le règlement européen sur l'IA s'applique par étapes. Depuis le 2 août 2026, un chatbot doit dire qu'il est une IA, un deepfake doit être signalé, et un texte d'intérêt public généré par IA aussi, sauf s'il a été relu et assumé par une personne. Il n'y a pas d'obligation d'étiqueter tout contenu fait avec l'IA. Seul le marquage technique par les éditeurs d'outils bénéficie d'un délai, jusqu'au 2 décembre, pour les outils déjà sur le marché."
+   },
+   "image": {
+    "src": "assets/img/001-trace.jpg",
+    "alt": "Collage : deux mains tiennent un casque audio autour d'une bouche ouverte d'où s'échappent des lettres et des guillemets",
+    "style": "collage"
+   }
+  },
+  {
+   "id": "poste-de-travail",
+   "titre": "Un poste de travail augmenté",
+   "faits": [
+    "workspace",
+    "adobe"
+   ],
+   "image": {
+    "src": "assets/img/001-poste.jpg",
+    "alt": "Une équipe travaille autour d'une table en bois, ordinateurs portables et tablette ouverts",
+    "style": "photo",
+    "accent": "vert"
+   }
+  }
+ ],
+ "faits": {
+  "filigrane": {
+   "id": "filigrane",
+   "themes": [
+    "IA",
+    "Communication"
+   ],
+   "titre": "Les textes de ChatGPT vont porter un filigrane invisible en Europe",
+   "mot": "Filigrane",
+   "resume": "OpenAI a annoncé le 5 octobre un marquage invisible des textes produits par ChatGPT et Codex, pour se conformer à l'AI Act. Activé dans l'UE dans les prochaines semaines, pas par défaut au lancement. Dans un premier temps, le détecteur est réservé à des chercheurs et organisations expertes approuvés, et une réécriture l'affaiblit beaucoup.",
+   "impact": "Un texte sorti tel quel de ChatGPT pourra, à terme, être identifié comme tel. C'est le moment de fixer une règle d'équipe claire : ce qu'on réécrit, ce qu'on signale, ce qu'on assume.",
+   "sources": [
+    [
+     "Blog du Modérateur",
+     "6 oct.",
+     "https://www.blogdumoderateur.com/textes-chatgpt-filigrane-invisible/"
+    ],
+    [
+     "TechCrunch",
+     "5 oct.",
+     "https://techcrunch.com/2026/10/05/openai-will-start-watermarking-chatgpts-text-in-the-eu/"
+    ]
+   ],
+   "chiffre": [
+    "UE",
+    "les textes de ChatGPT marqués d'un filigrane invisible, pour l'AI Act"
+   ]
+  },
+  "workspace": {
+   "id": "workspace",
+   "themes": [
+    "IA",
+    "Digital"
+   ],
+   "titre": "Claude arrive dans Google Docs, Sheets et Slides",
+   "mot": "Workspace",
+   "resume": "Anthropic lance en bêta un panneau latéral qui lit et modifie le fichier ouvert : réécriture avec suggestions dans Docs, formules et graphiques dans Sheets, slides au bon thème dans Slides. Pour les offres Pro, Max, Team et Enterprise.",
+   "impact": "Fini le copier-coller entre l'assistant et tes documents : on retravaille un brief, un tableau de suivi ou une présentation directement dans le fichier. Par défaut, chaque modification demande ton accord.",
+   "sources": [
+    [
+     "Blog du Modérateur",
+     "7 oct.",
+     "https://www.blogdumoderateur.com/anthropic-lance-extension-claude-google-docs-sheets-slides/"
+    ],
+    [
+     "9to5Google",
+     "6 oct.",
+     "https://9to5google.com/2026/10/06/claude-google-docs-sheet-slides/"
+    ]
+   ],
+   "chiffre": [
+    "3",
+    "outils Google où Claude travaille directement : Docs, Sheets, Slides"
+   ]
+  },
+  "pubs": {
+   "id": "pubs",
+   "themes": [
+    "Marketing"
+   ],
+   "titre": "OpenAI va tester des publicités visuelles dans ChatGPT",
+   "mot": "Publicité",
+   "resume": "Un format de pub en images, affiché pendant qu'un utilisateur génère une image. Test aux États-Unis seulement, plus tard en octobre. Les pubs sont étiquetées et séparées de l'image générée. Aucune date pour l'Europe.",
+   "impact": "Rien à activer en France pour l'instant, mais ChatGPT devient un vrai support publicitaire, avec ses outils de mesure et de protection de marque. À suivre pour les futurs plans média.",
+   "sources": [
+    [
+     "TechCrunch",
+     "5 oct.",
+     "https://techcrunch.com/2026/10/05/openai-launches-visual-ads-that-appear-alongside-image-generation-results/"
+    ],
+    [
+     "gHacks",
+     "6 oct.",
+     "https://www.ghacks.net/2026/10/06/openai-will-test-visual-ads-in-chatgpt-during-image-generation-in-the-us-later-this-month/"
+    ]
+   ],
+   "chiffre": [
+    "oct.",
+    "début du test des pubs visuelles dans ChatGPT, aux États-Unis"
+   ]
+  },
+  "mesure": {
+   "id": "mesure",
+   "themes": [
+    "Marketing",
+    "Digital"
+   ],
+   "titre": "On commence à pouvoir mesurer le trafic venu des IA",
+   "mot": "Mesure",
+   "resume": "AppsFlyer est une entreprise de mesure marketing, surtout utilisée par les applications mobiles pour savoir d'où viennent leurs utilisateurs. Elle ajoute désormais les moteurs de réponse IA (ChatGPT, Claude, Perplexity, Copilot, Gemini…) aux sources de trafic qu'elle sait reconnaître, et distingue ce qui vient de la pub de ce qui vient d'une simple mention. Annonce du 22 septembre, reprise par CB News le 7 octobre.",
+   "impact": "La visibilité dans les réponses des IA sort du flou : elle devient un canal qu'on suit avec des chiffres. En B2B, la question à se poser dès maintenant : que répondent les IA quand un acheteur cherche une solution comme la vôtre ?",
+   "sources": [
+    [
+     "AppsFlyer",
+     "22 sept.",
+     "https://www.appsflyer.com/company/newsroom/pr/appsflyer-aeo-measurement/"
+    ],
+    [
+     "CB News",
+     "7 oct.",
+     "https://www.cbnews.fr/digital/aeo-appsflyer-etend-sa-mesure-aux-moteurs-recherche-ia"
+    ]
+   ],
+   "chiffre": [
+    "8",
+    "moteurs de réponse IA désormais mesurés par AppsFlyer"
+   ],
+   "note": "Surtout B2C (applications mobiles), mais le signal vaut aussi pour le B2B."
+  },
+  "adobe": {
+   "id": "adobe",
+   "themes": [
+    "Design"
+   ],
+   "titre": "Adobe permet de retoucher à la main dans ChatGPT",
+   "mot": "Retouche",
+   "resume": "Le module Adobe dans ChatGPT gagne une édition interactive : on demande une retouche en langage courant, puis on ajuste soi-même teinte, contraste et luminosité dans un panneau, sans quitter la conversation. Images, créations graphiques et PDF. Annonce du 29 septembre, juste avant la période.",
+   "impact": "Les petites retouches de visuels se font sans ouvrir Photoshop ni solliciter un graphiste. Utile pour décliner vite un visuel de post ou de présentation.",
+   "sources": [
+    [
+     "Blog Adobe",
+     "29 sept.",
+     "https://blog.adobe.com/en/publish/2026/09/29/openai-devday-2026-introducing-hands-on-editing-adobe-plugin-chatgpt"
+    ],
+    [
+     "CB News",
+     "4 oct.",
+     "https://www.cbnews.fr/creation/adobe-renforce-son-integration-chatgpt"
+    ]
+   ],
+   "chiffre": [
+    "3",
+    "types de contenus retouchables à la main dans ChatGPT : images, créations graphiques et PDF"
+   ]
+  }
+ },
+ "metier": [
+  {
+   "theme": "Marketing",
+   "chiffre": "+11,9 %",
+   "titre": "Le marché publicitaire mondial accélère en 2026",
+   "texte": "WARC prévoit 1 340 milliards de dollars de dépenses publicitaires en 2026. Réseaux sociaux (+21,3 %), search et retail media pèsent à eux trois 66,4 % du total, et Alphabet, Amazon et Meta en captent près de 60 % hors Chine.",
+   "impact": "Les budgets se concentrent sur quelques plateformes. Pour une marque B2B, c'est un argument pour renforcer ses canaux propres (site, contenus, newsletter) plutôt que de tout louer.",
+   "sources": [
+    [
+     "WARC",
+     "7 oct.",
+     "https://www.warc.com/en/article/global-ad-spend-outlook-q-3-2026-eb1a9505c8d34d1fb3833cf61f675165"
+    ],
+    [
+     "The Media Leader",
+     "9 oct.",
+     "https://fr.themedialeader.com/?p=220140"
+    ]
+   ]
+  },
+  {
+   "theme": "Communication",
+   "chiffre": "–20,8 %",
+   "titre": "Les marques d'information perdent un cinquième de leurs visites en un an",
+   "texte": "Selon l'ACPM, 40 marques d'information ont perdu 20,8 % de visites (sites et applis) entre septembre 2025 et septembre 2026, et 23 % sur les seuls sites (Le Parisien –40,9 %, franceinfo –29,1 %). Les médias y voient en partie l'effet des résumés IA de Google, lancés en France le 22 juillet, sans lien direct établi.",
+   "impact": "Les relations presse et le contenu de marque ne peuvent plus compter seulement sur le trafic des médias. C'est le même fil que cette semaine : les réponses IA captent l'attention.",
+   "sources": [
+    [
+     "The Media Leader",
+     "7 oct.",
+     "https://fr.themedialeader.com/?p=220106"
+    ],
+    [
+     "Siècle Digital",
+     "9 oct.",
+     "https://siecledigital.fr/2026/10/09/les-sites-dinformation-francais-perdent-pres-dun-quart-de-leur-trafic-google-dans-le-viseur/"
+    ]
+   ]
+  }
+ ],
+ "contexte": [
+  {
+   "titre": "L'IA prescrit les achats",
+   "texte": "67 % des consommateurs (France et États-Unis) font plus confiance à une recommandation d'IA qu'à un influenceur pour juger une marque inconnue, et 47 % disent que l'IA les a déjà conduits à revoir leur choix de marque. C'est tout l'enjeu du GEO : être bien cité dans les réponses des IA. Une seule source, de seconde main.",
+   "source": "Contentsquare via CB News, 13 sept.",
+   "url": "https://www.cbnews.fr/etudes/67-consommateurs-font-plus-confiance-recommandation-ia-qu-influenceur"
+  },
+  {
+   "titre": "Le vrai reprend de la valeur",
+   "texte": "Les photos et vidéos de vrais clients sont le format jugé le plus fiable (58 % des réponses), contre 35 % pour les contenus de marque. Plus l'IA produit, plus la preuve humaine compte. Une seule source, de seconde main.",
+   "source": "Skeepers via Comarketing-News, 16 sept.",
+   "url": "https://comarketing-news.fr/plus-lia-progresse-plus-les-consommateurs-veulent-du-vrai/"
+  }
+ ],
+ "aussi": [
+  {
+   "texte": "Mistral Large 4 : Mistral AI présente son nouveau grand modèle, entraîné en Europe. Performances annoncées par Mistral, non vérifiées par un tiers.",
+   "source": "Blog du Modérateur",
+   "url": "https://www.blogdumoderateur.com/mistral-large-4-mistral-ai-veut-reduire-ecart-modeles-open-weight-chinois/"
+  },
+  {
+   "texte": "Amazon bloque l'agent Muse de Meta, et d'autres sites marchands freinent les assistants qui agissent à la place des internautes ; Meta, Walmart, Stripe et d'autres travaillent sur un standard ouvert (Personal Agent Protocol).",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/"
+  }
+ ],
+ "tendance": "Les assistants IA deviennent un canal à part entière, avec ses règles : on y fait de la pub, on y mesure sa visibilité, et les contenus qui en sortent sont marqués. Pour le marketing, l'IA n'est plus seulement un outil de production, c'est aussi un endroit où la marque doit être présente et mesurable.",
+ "image": {
+  "src": "assets/img/001-une.jpg",
+  "alt": "Collage : bouches qui parlent et bulles de dialogue sur fond violet et jaune",
+  "style": "collage"
+ }
 }

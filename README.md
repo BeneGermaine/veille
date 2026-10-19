@@ -19,7 +19,7 @@ Site : https://benegermaine.github.io/veille/ · Mesure d'audience : https://ben
 | `contenu/numeros/` | Le contenu de chaque numéro, un fichier par semaine. C'est la seule chose qui change chaque lundi. |
 | `contenu/livre-blanc.json` | Le titre, l'accroche, le sommaire et le lien du PDF du livre blanc. |
 | `livre-blanc/` | La mise en page du livre blanc : `livre-blanc.md` (export Markdown du document validé dans Claude Docs), `img/` (images des chapitres, couverture, portrait), `fonts/` (Arimo). |
-| `outils/livre_blanc.py` | Fabrique le PDF du livre blanc (A4, 14 pages) dans `assets/livre-blanc-2026.pdf` à partir de `livre-blanc/livre-blanc.md`. |
+| `outils/livre_blanc.py` | Fabrique le PDF du livre blanc (A4, 16 pages) dans `assets/livre-blanc-2026.pdf` à partir de `livre-blanc/livre-blanc.md`. |
 | `outils/recolor.py` | Repasse une image (collage) aux couleurs de la charte : rouge #e64855, vert #cbe170, noir. |
 | `assets/img/` | Les images de chaque numéro (`NNN-une.jpg`, `NNN-*.jpg`), 1600 px de large. |
 | `outils/build.py` | Le script qui fabrique les pages du site à partir du contenu. |

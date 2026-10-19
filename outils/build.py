@@ -12,9 +12,11 @@ RACINE = pathlib.Path(__file__).resolve().parent.parent
 SITE = "https://benegermaine.github.io/veille/"
 AUTEUR = "Bénédicte Lallement"
 # Avant le lancement officiel : on demande aux moteurs de recherche de ne pas indexer le site. Mettre "" le jour du lancement.
-ROBOTS = '<meta name="robots" content="noindex, nofollow">'
+ROBOTS = ""  # site ouvert à l'indexation depuis le 19 octobre 2026
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">'
 LIRE_ETUDE = "Lire l'étude"
+# mesure d'audience GoatCounter (sans cookies) : https://benegermaine.goatcounter.com
+GOATCOUNTER = '<script data-goatcounter="https://benegermaine.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 # apparition douce des blocs au défilement (désactivée si l'utilisateur limite les animations)
 APPARITION = """<script>(function(){var d=document.documentElement;if(!("IntersectionObserver" in window)||matchMedia("(prefers-reduced-motion: reduce)").matches)return;d.classList.add("anim");
 var o=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add("vu");o.unobserve(x.target);}});},{rootMargin:"0px 0px -8% 0px"});
@@ -64,7 +66,7 @@ def barre(base, actif):
 
 
 def pied(base):
-    return f'''<footer class="pied wrap"><div class="max"><p>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée.</p></div></footer><a class="haut-page" href="#" aria-label="Remonter en haut de la page">↑</a>{APPARITION}</body></html>'''
+    return f'''<footer class="pied wrap"><div class="max"><p>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée.</p></div></footer><a class="haut-page" href="#" aria-label="Remonter en haut de la page">↑</a>{GOATCOUNTER}{APPARITION}</body></html>'''
 
 
 def photo(base, img, cls="photo"):
@@ -189,7 +191,7 @@ document.querySelectorAll("#liste li").forEach(li=>{{li.hidden=!!b.dataset.t&&!l
     lb_meta = RACINE / "contenu" / "livre-blanc.json"
     lb = json.loads(lb_meta.read_text()) if lb_meta.exists() else {}
     dispo = bool(lb.get("pdf"))
-    bouton = f'<a class="btn" href="{e(lb["pdf"])}" target="_blank" rel="noopener">Télécharger le livre blanc (PDF) <span aria-hidden="true">↗</span></a>' if dispo else '<span class="btn" aria-disabled="true">Bientôt disponible</span>'
+    bouton = f'<a class="btn" href="{e(lb["pdf"])}" target="_blank" rel="noopener" data-goatcounter-click="telechargement-livre-blanc" data-goatcounter-title="Téléchargement du livre blanc">Télécharger le livre blanc (PDF) <span aria-hidden="true">↗</span></a>' if dispo else '<span class="btn" aria-disabled="true">Bientôt disponible</span>'
     couv_img = lb.get("couverture")
     a_photo = bool(couv_img) and (RACINE / couv_img).exists()
     couv = (f'<div class="couv" aria-hidden="true">' + (f'<img src="{e(couv_img)}" alt="">' if a_photo else "") +

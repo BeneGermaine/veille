@@ -57,7 +57,12 @@
    "faits": [
     "aimode",
     "chatgpt-ads"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/003-pub.jpg",
+    "alt": "Collage : deux personnes avec un mégaphone à la place de la tête se parlent à travers leurs ordinateurs",
+    "style": "collage"
+   }
   },
   {
    "id": "visibilite",

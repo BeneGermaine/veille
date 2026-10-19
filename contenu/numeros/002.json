@@ -55,21 +55,38 @@
    "faits": [
     "gpt6",
     "gemini"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/002-assistants.jpg",
+    "alt": "Vue aérienne d'une vague qui déferle sur une plage de sable noir",
+    "style": "photo",
+    "accent": "vert"
+   }
   },
   {
    "id": "pub-transparente",
    "titre": "La pub dans l'IA, acceptée si on l'explique",
    "faits": [
     "kantar"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/002-pub.jpg",
+    "alt": "Une ampoule en papier découpé sur un mur de béton",
+    "style": "photo"
+   }
   },
   {
    "id": "medias",
    "titre": "Les médias veulent être cités et rémunérés",
    "faits": [
     "spur"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/002-medias.jpg",
+    "alt": "Deux bulles de dialogue, dont l'une affiche trois points de suspension",
+    "style": "photo",
+    "accent": "vert"
+   }
   },
   {
    "id": "souverainete",

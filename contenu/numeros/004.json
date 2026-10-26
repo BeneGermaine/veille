@@ -70,7 +70,12 @@
    "faits": [
     "braze",
     "canva"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/004-outils.jpg",
+    "alt": "Deux écrans sur un bureau affichent des maquettes de sites et de mises en page",
+    "style": "photo"
+   }
   },
   {
    "id": "prospection",

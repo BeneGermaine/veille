@@ -93,7 +93,12 @@
    "titre": "Les entreprises attendues sur la souveraineté",
    "faits": [
     "ipsos"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/002-souverainete.jpg",
+    "alt": "Une salle pleine écoute un intervenant qui présente devant un écran",
+    "style": "photo"
+   }
   }
  ],
  "faits": {

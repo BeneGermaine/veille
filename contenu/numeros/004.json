@@ -15,6 +15,11 @@
   "Marketing",
   "Design"
  ],
+ "image": {
+  "src": "assets/img/004-une.jpg",
+  "alt": "Collage : deux mains tiennent un smartphone d'où s'échappent des bulles de discussion, sur fond vert",
+  "style": "collage"
+ },
  "chiffres_cles": [
   {
    "chiffre": "89 pays",
@@ -52,7 +57,12 @@
    "faits": [
     "chatgpt-ads",
     "meta-ia"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/004-pub-ia.jpg",
+    "alt": "Collage : deux mains tiennent un smartphone d'où sortent des icônes d'achat (caddie, maison, voiture), sur fond rouge",
+    "style": "collage"
+   }
   },
   {
    "id": "outils",
@@ -67,7 +77,13 @@
    "titre": "La prospection sous cadre",
    "faits": [
     "cnil"
-   ]
+   ],
+   "image": {
+    "src": "assets/img/004-prospection.jpg",
+    "alt": "Deux combinés de téléphone anciens reliés par leur fil, sur fond gris clair",
+    "style": "photo",
+    "accent": "vert"
+   }
   }
  ],
  "faits": {

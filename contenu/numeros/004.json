@@ -1,0 +1,287 @@
+{
+ "numero": 4,
+ "slug": "004",
+ "lundi": "2026-10-26",
+ "label": "Lundi 26 octobre 2026",
+ "titre": "L'IA travaille pour vous, la responsabilité reste à vous.",
+ "chapo": [
+  "OpenAI étend ses pubs ChatGPT à 89 pays pendant que Meta rend les annonceurs seuls responsables des retouches faites par son IA. Salesforce rachète Braze, Canva lance son propre modèle d'image, et la CNIL encadre la déduction des adresses e-mail de prospects.",
+  "Les outils automatisent toujours plus, mais c'est toujours l'entreprise qui répond de ce qui part en son nom. Pour une équipe marketing B2B, savoir qui relit, qui valide et qui signe devient une compétence à part entière."
+ ],
+ "themes": [
+  "IA",
+  "Digital",
+  "Communication",
+  "Marketing",
+  "Design"
+ ],
+ "chiffres_cles": [
+  {
+   "chiffre": "89 pays",
+   "texte": "où les publicités ChatGPT sont désormais disponibles, après l'ajout de 26 nouveaux pays (la France ne figure pas parmi les nouveaux pays cités)",
+   "source": "OpenAI, 21 oct.",
+   "url": "https://openai.com/index/chatgpt-ads-expands-26-new-countries/"
+  },
+  {
+   "chiffre": "+14 %",
+   "texte": "de hausse du prix moyen par publicité chez Meta au troisième trimestre 2026, sur un an, pour des impressions en hausse de 10 % (chiffres mondiaux de Meta)",
+   "source": "Meta, 21 oct.",
+   "url": "https://s21.q4cdn.com/399680738/files/doc_news/Meta-Reports-Third-Quarter-2026-Results-2026.pdf"
+  },
+  {
+   "chiffre": "9 %",
+   "texte": "des lectures de presse ont lieu au travail, et 7 % viennent d'abonnements ou d'achats d'entreprise (étude ACPM OneNext, print uniquement ; chiffres repris par CB News, absents de la page publique de l'ACPM)",
+   "source": "CB News, 22 oct.",
+   "url": "https://www.cbnews.fr/etudes/onenext-s2-2026-trio-tete-lnm-compose-pqr66-parisien-aujourd-hui-france-monde"
+  },
+  {
+   "chiffre": "39 %",
+   "texte": "des Français estiment qu'une pub diffusée à côté de contenus IA de faible qualité dégraderait leur perception de la marque ; 51 % des marketeurs français s'en inquiètent (étude de DoubleVerify, qui vend des solutions de protection des marques)",
+   "source": "The Media Leader, 22 oct.",
+   "url": "https://fr.themedialeader.com/39-des-francais-penalisent-les-marques-exposees-a-lai-slop/"
+  }
+ ],
+ "regard": {
+  "texte": "Cette semaine, Meta a écrit noir sur blanc ce que beaucoup pressentaient : l'IA peut retoucher vos pubs, c'est vous qui en répondez. En B2B, la question n'est plus d'adopter ou non ces fonctions, mais de savoir qui relit, qui valide et qui signe. Une équipe qui a des règles claires peut automatiser sereinement ; les autres automatisent leurs angles morts.",
+  "statut": "valide"
+ },
+ "etapes": [
+  {
+   "id": "pub-ia",
+   "titre": "La pub pilotée par l'IA change d'échelle",
+   "faits": [
+    "chatgpt-ads",
+    "meta-ia"
+   ]
+  },
+  {
+   "id": "outils",
+   "titre": "Les outils marketing se concentrent et s'équipent",
+   "faits": [
+    "braze",
+    "canva"
+   ]
+  },
+  {
+   "id": "prospection",
+   "titre": "La prospection sous cadre",
+   "faits": [
+    "cnil"
+   ]
+  }
+ ],
+ "faits": {
+  "chatgpt-ads": {
+   "id": "chatgpt-ads",
+   "themes": [
+    "IA",
+    "Marketing"
+   ],
+   "titre": "Les pubs ChatGPT s'étendent à 89 pays",
+   "mot": "ChatGPT Ads",
+   "resume": "OpenAI étend ses publicités à 26 nouveaux pays, soit 89 au total. Selon OpenAI, plus de 100 000 annonceurs ont lancé des campagnes depuis le lancement des pubs, il y a un peu plus de huit mois. Les publicités n'apparaissent que dans les offres gratuites Free et Go, et aucun nouveau format n'est annoncé. Bémol : chiffres déclarés par OpenAI ; 100 000 est un cumul d'annonceurs depuis le lancement, pas un nombre d'annonceurs actifs.",
+   "impact": "ChatGPT devient un canal média international, à intégrer dans les arbitrages budgétaires 2027 face à Google Ads. Mais les pubs ne touchent que les utilisateurs gratuits : vérifiez que vos acheteurs sont bien là avant d'y mettre du budget.",
+   "sources": [
+    [
+     "OpenAI",
+     "21 oct.",
+     "https://openai.com/index/chatgpt-ads-expands-26-new-countries/"
+    ],
+    [
+     "PPC Land",
+     "21 oct.",
+     "https://ppc.land/advertisers-in-26-more-countries-gain-chatgpt-ads-bringing-the-total-to-89/"
+    ]
+   ],
+   "chiffre": [
+    "89",
+    "pays où les publicités ChatGPT sont disponibles"
+   ]
+  },
+  "meta-ia": {
+   "id": "meta-ia",
+   "themes": [
+    "IA",
+    "Marketing"
+   ],
+   "titre": "Meta rend les annonceurs seuls responsables des retouches de son IA",
+   "mot": "Meta",
+   "resume": "Les nouvelles conditions commerciales de Meta ajoutent une section « AI Features » : l'annonceur est « seul responsable » de ce que l'IA crée ou modifie dans ses annonces, y compris pour des fonctions que Meta active lui-même. Prévues au 30 octobre, elles entreront en vigueur le 20 novembre 2026 : le 23 octobre, un porte-parole de Meta a annoncé ce report à Reuters, pour laisser le temps d'expliquer les changements aux partenaires. Des annonceurs, dont la librairie en ligne Bookshop.org et l'agence Exverus, disent avoir découvert des retouches IA qu'ils n'avaient pas activées, les options étant cachées dans des menus repliés. Selon PPC Land, continuer à utiliser les produits de Meta vaut acceptation des conditions. Bémol : le texte officiel de Meta n'a pas pu être consulté directement ; les informations viennent d'Adweek, de PPC Land et de Relevant Audience, et Meta n'a annoncé aucun changement du contenu de la section « AI Features ».",
+   "impact": "Avant le 20 novembre, faites auditer par votre agence les options d'amélioration automatique activées dans le gestionnaire de publicités. Et ajoutez une relecture des annonces réellement diffusées, pas seulement des créations validées.",
+   "sources": [
+    [
+     "Adweek",
+     "22 oct.",
+     "https://www.adweek.com/media/advertisers-pull-meta-ads-that-had-unwanted-ai-glow-ups/"
+    ],
+    [
+     "PPC Land",
+     "22 oct.",
+     "https://ppc.land/meta-makes-advertisers-solely-responsible-for-its-ai-ad-edits-from-oct-30/"
+    ],
+    [
+     "Relevant Audience",
+     "24 oct.",
+     "https://www.relevantaudience.com/meta/meta-commercial-terms-delayed-to-november-20-2026/"
+    ]
+   ],
+   "chiffre": [
+    "20 nov.",
+    "nouvelle date d'entrée en vigueur des conditions de Meta (au lieu du 30 octobre)"
+   ]
+  },
+  "braze": {
+   "id": "braze",
+   "themes": [
+    "Digital",
+    "Marketing"
+   ],
+   "titre": "Salesforce va racheter Braze pour environ 5,66 milliards de dollars",
+   "mot": "Braze",
+   "resume": "Salesforce a signé un accord définitif pour acquérir Braze, une plateforme d'engagement client (e-mail, notifications, messages personnalisés). Les actionnaires recevront 47,50 dollars par action en numéraire, pour une valeur d'entreprise d'environ 5,66 milliards de dollars. Braze compte environ 2 770 clients, dont Canva. Le rachat doit renforcer la personnalisation de Marketing Cloud et les agents IA de Salesforce (Agentforce). Bémol : l'opération est annoncée, pas conclue ; la finalisation est attendue sur l'exercice fiscal 2028 de Salesforce, sous réserve du vote des actionnaires et des autorisations réglementaires.",
+   "impact": "Clients de Braze ou de Marketing Cloud : demandez par écrit la feuille de route, les tarifs et les conditions de traitement des données avant vos prochains renouvellements. Le marché des outils marketing se concentre autour des agents IA : moins de fournisseurs, plus de dépendance.",
+   "sources": [
+    [
+     "Braze (communiqué)",
+     "20 oct.",
+     "https://www.braze.com/press-releases/salesforce-signs-definitive-agreement-to-acquire-braze"
+    ],
+    [
+     "Agile Brand Guide",
+     "20 oct.",
+     "https://agilebrandguide.com/salesforce-to-acquire-braze-for-5-66-billion-adding-real-time-engagement-to-marketing-cloud/"
+    ]
+   ],
+   "chiffre": [
+    "5,66 Md$",
+    "valeur d'entreprise de Braze dans l'opération"
+   ]
+  },
+  "canva": {
+   "id": "canva",
+   "themes": [
+    "Design",
+    "IA"
+   ],
+   "titre": "Canva lance Craft, son premier modèle d'image maison",
+   "mot": "Canva Craft",
+   "resume": "Canva présente Craft, son premier modèle d'image entièrement conçu et entraîné par ses équipes de recherche. Il produit des images jusqu'en 2K, dans plus de 30 proportions d'image, et sait écrire du texte lisible dans 55 langues. Il est disponible dans Dream Lab et via l'API de Canva ; l'intégration dans les assistants IA comme ChatGPT ou Gemini (via le protocole MCP) est annoncée pour plus tard. Bémol : Canva ne précise pas les conditions de licence ni de garantie juridique pour un usage commercial ; la page de Canva n'est pas datée, la date vient de TechCrunch.",
+   "impact": "Des visuels avec du texte intégré (posts, slides, infographies) produits directement dans l'outil déjà utilisé par l'équipe. Avant tout usage en campagne, vérifiez les conditions d'usage commercial et faites respecter votre charte : le modèle ne la connaît pas.",
+   "sources": [
+    [
+     "Canva Newsroom",
+     "",
+     "https://www.canva.com/newsroom/news/canva-craft/"
+    ],
+    [
+     "TechCrunch",
+     "22 oct.",
+     "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+    ]
+   ],
+   "chiffre": [
+    "55",
+    "langues dans lesquelles Craft écrit du texte lisible"
+   ]
+  },
+  "cnil": {
+   "id": "cnil",
+   "themes": [
+    "Marketing",
+    "Digital"
+   ],
+   "titre": "La CNIL encadre la déduction des adresses e-mail professionnelles",
+   "mot": "CNIL",
+   "resume": "La CNIL a publié un cadre sur la pratique qui consiste à « deviner » l'adresse professionnelle d'un prospect (du type prenom.nom@entreprise.fr) à partir d'informations disponibles en ligne. Elle peut reposer sur l'intérêt légitime, à condition de ne pas porter « une atteinte disproportionnée aux droits et intérêts des personnes concernées ». Les personnes sans présence identifiable en ligne « ne peuvent, a priori, pas s'attendre raisonnablement » à cette reconstitution. L'adresse ne doit être conservée que si « un premier contact effectif est établi », et toute opposition entraîne l'exclusion immédiate des données. Publié le 16 octobre et non repris dans le numéro précédent.",
+   "impact": "Auditez avec les commerciaux et le DPO vos outils d'enrichissement de contacts et vos séquences de prospection. Trois règles simples : cibler des personnes visibles professionnellement, purger les adresses sans réponse, tenir une liste d'opposition à jour.",
+   "sources": [
+    [
+     "CNIL",
+     "16 oct.",
+     "https://www.cnil.fr/fr/reconstitution-adresses-professionnelles-quel-cadre"
+    ],
+    [
+     "Leptidigital",
+     "20 oct.",
+     "https://www.leptidigital.fr/growth-hacking/appels-a-froid-e-mails-pro-devines-cnil-encadre-deux-pratiques-courantes-prospection-commerciale-92263/"
+    ]
+   ],
+   "chiffre": [
+    "16 oct.",
+    "publication du cadre de la CNIL"
+   ]
+  }
+ },
+ "metier": [
+  {
+   "theme": "Marketing",
+   "chiffre": "89 %",
+   "titre": "Les voix expertes pèsent au moment de la considération",
+   "texte": "Selon une étude menée par Censuswide pour LinkedIn auprès de 6 196 marketeurs B2B dans 12 pays dont la France (du 21 juillet au 6 août 2026), 89 % pensent que la croissance future de leur entreprise dépend de leur influence sur les décideurs des générations Z et millennials. CB News a relayé la déclinaison française le 20 octobre. Bémol : étude commandée par LinkedIn, qui vend des formats de mise en avant d'experts ; 89 % est aussi le chiffre mondial de l'étude, publiée le 2 septembre, et la ventilation française n'est donnée que par CB News.",
+   "impact": "Les prises de parole d'experts et de collaborateurs servent surtout au milieu du parcours d'achat, pas à la notoriété. À mesurer en considération et en contacts qualifiés, pas en impressions.",
+   "sources": [
+    [
+     "LinkedIn",
+     "2 sept.",
+     "https://news.linkedin.com/2026/linkedin-research-gen-z-professionals-are-becoming-key-business-decision-makers-yet-72-lack-confidence-to-turn-contacts-into-career-opportunities"
+    ],
+    [
+     "CB News",
+     "20 oct.",
+     "https://www.cbnews.fr/etudes/marketing-b2b-les-professionnels-priorisent-credibilite"
+    ]
+   ]
+  },
+  {
+   "theme": "Design",
+   "chiffre": "533 M$",
+   "titre": "Getty Images se restructure sous protection du Chapter 11",
+   "texte": "Getty Images a engagé une procédure volontaire de Chapter 11 (restructuration sous protection du tribunal, aux États-Unis) avec un plan déjà négocié avec ses créanciers. La famille Getty et Koch Equity Development apportent jusqu'à 533 millions de dollars de capital, et Getty sortira de la Bourse. Selon l'entreprise, aucun impact n'est attendu pour les clients et les contributeurs (déclaration de Getty).",
+   "impact": "Les licences en cours continuent, mais c'est le bon moment pour faire l'inventaire de vos contrats de banques d'images. Entre images générées et banques en difficulté, sécuriser les droits de vos visuels redevient un sujet.",
+   "sources": [
+    [
+     "Getty Images (communiqué)",
+     "21 oct.",
+     "https://investors.gettyimages.com/news-releases/news-release-details/getty-images-advances-financial-restructuring-strengthen-balance"
+    ],
+    [
+     "CB News (AFP)",
+     "21 oct.",
+     "https://www.cbnews.fr/medias/getty-images-se-declare-faillite-cadre-sa-restructuration"
+    ]
+   ]
+  },
+  {
+   "theme": "Communication",
+   "chiffre": "25 nov.",
+   "titre": "À l'agenda : la Semaine de la Communication",
+   "texte": "La Filière Communication organise la deuxième édition de la Semaine de la Communication du 23 au 27 novembre 2026. Le 25 novembre, une journée de débats se tient à l'auditorium de France Télévisions, autour de l'IA, de la souveraineté, de l'intérêt général et de l'avenir des marques. Bémol : une seule source.",
+   "impact": "Une date à inscrire dans votre plan de veille et de réseau, et l'occasion d'entendre la profession sur l'IA et la souveraineté.",
+   "sources": [
+    [
+     "Influencia",
+     "23 oct.",
+     "https://www.influencia.net/articles/ia-souverainete-climat-marques-la-semaine-de-la-communication-au-coeur-des-debats-de-societe"
+    ]
+   ]
+  }
+ ],
+ "tendance": "La responsabilité ne s'automatise pas. Plus les plateformes ajoutent de l'IA par défaut (retouches de pubs, prospection, création d'images), plus l'entreprise doit savoir qui relit, qui valide et qui signe. Le processus de validation n'est pas un frein à l'automatisation : c'est ce qui la rend possible. Il devient une compétence marketing à part entière.",
+ "aussi": [
+  {
+   "texte": "Google Meet : la traduction vocale en direct passe à 63 langues, avec détection automatique de la langue (déploiement à partir du 22 octobre, offres Workspace payantes). La liste des langues n'est pas publiée.",
+   "source": "Google Workspace Updates",
+   "url": "https://workspaceupdates.googleblog.com/2026/10/real-time-speech-translation-in-google-Meet-expands-to-63-languages-with-automatic-language-detection.html"
+  },
+  {
+   "texte": "Claude Duet : Anthropic présente un agent proactif qui envoie un brief du matin et surveille les applications connectées ; avant-première sur liste d'attente, aux États-Unis seulement.",
+   "source": "Anthropic",
+   "url": "https://claude.com/resources/articles/claude-duet"
+  },
+  {
+   "texte": "OpenAI en France : Laureline Serieys, ancienne directrice générale d'Uber France, prend la tête d'OpenAI pour la France et l'Europe du Sud le 9 novembre.",
+   "source": "Stratégies",
+   "url": "https://www.strategies.fr/actualites/culture-tech/LQ6780625C/openai-nomme-une-dg-en-france-laureline-serieys.html"
+  }
+ ]
+}

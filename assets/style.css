@@ -166,6 +166,8 @@ img{max-width:100%;display:block}
 .couv.sans-photo{background:var(--noir)}
 .btn{display:inline-block;font-weight:700;text-decoration:none;background:var(--noir);color:#fff;padding:15px 24px;margin-top:32px;border-radius:999px}
 .btn:hover{background:var(--rouge)}
+.btn-sec{background:transparent;color:var(--noir);border:2px solid var(--noir);padding:13px 22px;margin-top:12px}
+.btn-sec:hover{background:var(--noir);color:#fff}
 .btn[aria-disabled="true"]{background:var(--doux);color:var(--gris);cursor:not-allowed}
 
 /* pied */

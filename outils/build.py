@@ -15,6 +15,9 @@ AUTEUR = "Bénédicte Lallement"
 ROBOTS = ""  # site ouvert à l'indexation depuis le 19 octobre 2026
 FONTS = '<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap">'
 LIRE_ETUDE = "Lire l'étude"
+# formulaire d'inscription Brevo (liste « Veille Béné Germaine », double confirmation, mail de bienvenue)
+INSCRIPTION = "https://24cb74ef.sibforms.com/serve/MUIFANd7p_vAfp7q87HCAQnkAHyVEC7nthoTSX8Zp-39994pa6a52hki5X2kDXJINWiUD_KhGiNL5eFfgOc4gZXLvCxY3oYLDSdFGuMYtTJ-fdrNZw-XoVtxdn8sOUlsg09zqTcFgab5zRkRE43vgRpUT3mqLaEcpN4GSb5C1N0ph_sN6iCILFCL0-a8g9VjLank4ZXp7f-6kn-rYA=="
+LIEN_INSCRIPTION = lambda txt, cls="": f'<a{(" class=" + chr(34) + cls + chr(34)) if cls else ""} href="{INSCRIPTION}" target="_blank" rel="noopener" data-goatcounter-click="inscription-veille" data-goatcounter-title="Inscription à la veille">{txt} <span aria-hidden="true">↗</span></a>'
 # mesure d'audience GoatCounter (sans cookies) : https://benegermaine.goatcounter.com
 GOATCOUNTER = '<script data-goatcounter="https://benegermaine.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>'
 # apparition douce des blocs au défilement (désactivée si l'utilisateur limite les animations)
@@ -66,7 +69,7 @@ def barre(base, actif):
 
 
 def pied(base):
-    return f'''<footer class="pied wrap"><div class="max"><p>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée.</p></div></footer><a class="haut-page" href="#" aria-label="Remonter en haut de la page">↑</a>{GOATCOUNTER}{APPARITION}</body></html>'''
+    return f'''<footer class="pied wrap"><div class="max"><p>Chaque lundi, une veille IA, marketing, communication et design, datée et sourcée. Préparée avec un agent IA, relue et validée par {AUTEUR}. Chaque fait est vérifié, mais une erreur reste possible : signalez-la et elle sera corrigée. {LIEN_INSCRIPTION("Recevoir la veille chaque lundi")}</p></div></footer><a class="haut-page" href="#" aria-label="Remonter en haut de la page">↑</a>{GOATCOUNTER}{APPARITION}</body></html>'''
 
 
 def photo(base, img, cls="photo"):
@@ -143,7 +146,7 @@ def page_numero(n, prec, suiv, base):
             f'<li>{e(a["texte"])} <a href="{e(a["url"])}" target="_blank" rel="noopener">Lire sur {e(a["source"])} ↗</a></li>' for a in n["aussi"]) + "</ul></div></section>"
     p = f'<a href="{base}numeros/{prec["slug"]}.html">← N° {prec["numero"]} · {e(prec["label"])}</a>' if prec else '<span class="vide">Premier numéro</span>'
     s = f'<a href="{base}numeros/{suiv["slug"]}.html">N° {suiv["numero"]} · {e(suiv["label"])} →</a>' if suiv else f'<a href="{base}archives.html">Tous les numéros →</a>'
-    return f'''<div class="bienvenue wrap"><div class="max"><p><strong>Bienvenue dans la veille de {AUTEUR}.</strong> Chaque lundi, ce qui a bougé dans l'IA, le marketing, la communication et le design B2B : quelques faits datés et sourcés, et ce qu'ils changent concrètement pour une équipe marketing. <a href="{base}archives.html">Voir tous les numéros</a></p></div></div>
+    return f'''<div class="bienvenue wrap"><div class="max"><p><strong>Bienvenue dans la veille de {AUTEUR}.</strong> Chaque lundi, ce qui a bougé dans l'IA, le marketing, la communication et le design B2B : quelques faits datés et sourcés, et ce qu'ils changent concrètement pour une équipe marketing. <a href="{base}archives.html">Voir tous les numéros</a> · {LIEN_INSCRIPTION("Recevoir la veille par e-mail")}</p></div></div>
 <nav class="collant" aria-label="Parties de ce numéro" hidden><div class="max">{collant}</div></nav>
 <div class="une wrap"><div class="max">
   <div class="meta"><span class="num">N° {n["numero"]}</span><span>{e(n["label"])}</span></div>
@@ -203,7 +206,7 @@ document.querySelectorAll("#liste li").forEach(li=>{{li.hidden=!!b.dataset.t&&!l
 <h1>{e(lb.get("titre", "IA, marketing, communication, design : ce qui a changé en 2026"))}</h1>
 <p class="lede">{e(lb.get("accroche", ""))}</p>
 <ul>{"".join(f"<li>{e(x)}</li>" for x in lb.get("sommaire", []))}</ul>
-{bouton}</div>
+{bouton} {LIEN_INSCRIPTION("Recevoir la veille chaque lundi", "btn btn-sec")}</div>
 {couv}</div></main>'''
     (RACINE / "livre-blanc.html").write_text(tete(f"Le livre blanc · La veille de {AUTEUR}", "IA, marketing, communication, design : ce qui a changé de janvier à septembre 2026.", "livre-blanc.html") + barre("", "lb") + page_lb + pied(""))
     (RACINE / ".nojekyll").write_text("")
